@@ -10,13 +10,15 @@
     <title>Coffee Teeth</title>
 </head>
 <body>
-    <header>
+    <header id="header" onmouseenter="mouseenter()" onmouseleave="mouseleave()">
         <h1>Coffee Teeth</h1>
         <nav>
-            <a href="#home" onclick="clickhome()">HOME</a>
-            <a href="#store" onclick="clickstore()">STORE</a>
-            <a href="#about" onclick="clickabout()">ABOUT</a>
-            <a href="#contact" onclick="clickcontact()">CONTACT</a>
+            <ul>
+                <li><button id="but1" onclick="clickhome()">HOME</button></li>
+                <li><button id="but2" onclick="clickstore()">STORE</button></li>
+                <li><button id="but3" onclick="clickabout()">ABOUT</button></li>
+                <li><button id="but4" onclick="clickcontact()">CONTACT</button></li>
+            </ul>
         </nav>
     </header>
     <main>
@@ -32,12 +34,12 @@
             about
         </article>
 
-
         <article id="contact" hidden>
             contact
         </article>
 
-        <script src="script/script.js"></script>
+        <script src="script/nav-script.js"></script>
+        <script src="script/header-script.js"></script>
     </main>
 </body>
 </html>

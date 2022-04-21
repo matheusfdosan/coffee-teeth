@@ -35,3 +35,4 @@ function clickcontact() {
     store.setAttribute('hidden', 'hidden')
     about.setAttribute('hidden', 'hidden')
 }
+

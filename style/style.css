@@ -7,8 +7,19 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: rgba(0, 0, 0, 0.427);
+}
+
 header {
     text-align: center;
+    color: #fff;
+    transition: .5s;
+}
+
+header:hover {
+    background-color: #fff;
+    border-bottom: 1px solid #808080;
 }
 
 header h1 {
@@ -17,21 +28,31 @@ header h1 {
 }
 
 nav {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    display: inline-block;
+    text-align: center;
 }
 
-nav a {
+ul {
+    display: flex;
+    text-align: center;
+    padding-top: 20px;
+}
+
+li {
+    list-style-type: none; 
+}
+
+li button {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.1em;
-    font-weight: lighter;
-    color: #000;
-    text-decoration: none;
-    padding: 10px;
+    font-weight: border;
+    color: #fff;
+    padding: 20px;
+    border: transparent;
+    background-color: transparent;
 }
 
-nav a:hover {
-    padding-bottom: 20px;
-    border-bottom: 1px solid black;
-    transition: 1s;
+li button:hover {
+    border-bottom: 1px solid #000;
+    transition: .5s;
 }
