@@ -10,20 +10,30 @@
     <title>Coffee Teeth</title>
 </head>
 <body>
-    <header id="header" onmouseenter="mouseenter()" onmouseleave="mouseleave()">
+    <header id="header">
         <h1>Coffee Teeth</h1>
-        <nav>
-            <ul>
-                <li><button id="but1" onclick="clickhome()">HOME</button></li>
-                <li><button id="but2" onclick="clickstore()">STORE</button></li>
-                <li><button id="but3" onclick="clickabout()">ABOUT</button></li>
-                <li><button id="but4" onclick="clickcontact()">CONTACT</button></li>
-            </ul>
-        </nav>
     </header>
+    <nav>
+        <ul>
+            <li><button id="btn1" onclick="clickhome()">HOME</button></li>
+            <li><button id="btn2" onclick="clickstore()">STORE</button></li>
+            <li><button id="btn3" onclick="clickabout()">ABOUT</button></li>
+            <li><button id="btn4" onclick="clickcontact()">CONTACT</button></li>
+        </ul>
+    </nav>
     <main>
         <article id="home">
-            home
+            <div id="slider-home">
+                <div id="slider">
+                    <img class="selected" src="images/slider/coffee-image1.jpg" alt="img1">
+                    <img src="images/slider/coffee-image2.jpg" alt="img2">
+                    <img src="images/slider/coffee-image3.jpg" alt="img3">
+                    <img src="images/slider/coffee-image4.jpg" alt="img4">
+                    <img src="images/slider/coffee-image5.jpg" alt="img5">
+                </div>
+            </div>
+
+            <script src="script/slider-script.js"></script>
         </article>
 
         <article id="store" hidden>
@@ -39,7 +49,6 @@
         </article>
 
         <script src="script/nav-script.js"></script>
-        <script src="script/header-script.js"></script>
     </main>
 </body>
 </html>
