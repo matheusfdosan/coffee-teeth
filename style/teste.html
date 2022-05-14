@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html>
+  
+<head>
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0">
+    <style>
+        div {
+            margin: 10px;
+        }
+  
+        .first {
+            width: 25%;
+            display: inline-block;
+            background-color: green;
+        }
+  
+        .second {
+            width: 25%;
+            display: inline-block;
+            background-color: blue;
+        }
+  
+        .third {
+            width: 25%;
+            display: inline-block;
+            background-color: yellow;
+        }
+  
+        @media screen and (max-width: 500px) {
+  
+            .first,
+            .second,
+            .third {
+                width: 70%;
+            }
+        }
+    </style>
+</head>
+  
+<body>
+    <h1>Geeks for Geeks</h1>
+    <p>Responsive div using css.</p>
+    <div class="first">
+        <p>First block</p>
+    </div>
+    <div class="second">
+        <p>Second block</p>
+    </div>
+    <div class="third">
+        <p>Third block </p>
+    </div>
+    <p>
+        The media query will only apply 
+        if the media type is screen
+        and the viewport is equal to 
+        or less than 500px
+    </p>
+</body>
+  
+</html>
