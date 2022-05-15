@@ -1,4 +1,4 @@
 # coffee-teeth
- a coffee website https://matheusfdosan.github.io/coffee-teeth/
+ a coffee website <a href="https://matheusfdosan.github.io/coffee-teeth/" target="_blank">Coffee Teeth</a>
 
 ![ÉUÉ](https://images-na.ssl-images-amazon.com/images/I/71UdPXPpjoL.png)
