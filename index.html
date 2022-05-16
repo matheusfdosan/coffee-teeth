@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="a coffee shop website, for coffee lovers!">
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/home-style.css">
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="a coffee shop website, for coffee lovers!">
+        <link rel="stylesheet" href="style/style.css">
+        <link rel="stylesheet" href="style/home-style.css">
+        <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <title>Coffee Teeth</title>
 </head>
 <body>
+
     <header id="header">
         <h1>Coffee Teeth</h1>
     </header>
+
     <nav>
         <ul>
             <li><button id="btn1" onclick="clickhome()">HOME</button></li>
@@ -22,72 +24,66 @@
             <li><button id="btn4" onclick="clickcontact()">CONTACT</button></li>
         </ul>
     </nav>
+    
     <main>
-        <article class="container" id="home">
-            <div id="slider-home">
-                <div id="slider">
-                    <img class="selected" src="images/slider/coffee-image1.jpg" alt="img1">
-                    <img src="images/slider/coffee-image2.jpg" alt="img2">
-                    <img src="images/slider/coffee-image3.jpg" alt="img3">
-                    <img src="images/slider/coffee-image4.jpg" alt="img4">
-                    <img src="images/slider/coffee-image5.jpg" alt="img5">
-                </div>
-            </div>
 
-            <div class="text">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, aperiam ratione quasi aliquid nihil nisi est, quidem autem iure, debitis maxime et necessitatibus! Commodi aut impedit beatae iusto sit optio architecto facere dicta. Impedit, repudiandae? Asperiores praesentium ipsam doloremque dolor consectetur ullam! Cupiditate repudiandae similique quis.</p>
-            </div>
-
-            <div id="title-level-two">
-                <h2>Some Items</h2>
-            </div>
-
-            <div id="items-list">
-                <div class="items" id="item-1">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/640px-A_small_cup_of_coffee.JPG" alt="coffee">
-                    <p>$19.99</p>
-                    <p>Lorem ipsum dolor sit amet</p>
+        <article>
+            <div class="container" id="home">
+                <div id="slider-home">
+                    <div id="slider">
+                        <img class="selected" src="images/slider/coffee-image1.jpg" alt="img1">
+                        <img src="images/slider/coffee-image2.jpg" alt="img2">
+                        <img src="images/slider/coffee-image3.jpg" alt="img3">
+                        <img src="images/slider/coffee-image4.jpg" alt="img4">
+                        <img src="images/slider/coffee-image5.jpg" alt="img5">
+                    </div>
                 </div>
-                
-                <div class="items" id="item-2">
-                    <img src="https://vejasp.abril.com.br/wp-content/uploads/2020/11/Veja-Comer-e-Beber-Comidinhas-Coffee-Lab-029.jpg.jpg?quality=70&strip=info&w=918?quality=70&strip=info&w=636" alt="coffee">
-                    <p>$19.99</p>
-                    <p>Lorem ipsum dolor sit amet</p>
+                <div class="text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, aperiam ratione quasi aliquid nihil nisi est, quidem autem iure, debitis maxime et necessitatibus! Commodi aut impedit beatae iusto sit optio architecto facere dicta. Impedit, repudiandae? Asperiores praesentium ipsam doloremque dolor consectetur ullam! Cupiditate repudiandae similique quis.</p>
                 </div>
-                
-                <div class="items" id="item-2">
-                    <img src="https://uploads.metropoles.com/wp-content/uploads/2022/04/21154556/278864076_5005742296170040_7061301060250785506_n-1.jpg" alt="coffee">
-                    <p>$19.99</p>
-                    <p>Lorem ipsum dolor sit amet</p>
-                </div>
-                
-                    <div class="items" id="item-2">
-                    <img src="https://media.timeout.com/images/103169535/750/422/image.jpg" alt="coffee">
-                    <p>$19.99</p>
-                    <p>Lorem ipsum dolor sit amet</p>
-                </div>
-            </div>
             
-            <footer>
-
-            </footer>
-
-            <script src="script/slider-script.js"></script>
+                <hr>
+                <script src="script/slider-script.js"></script>
+            </div>
+        </article>
+        
+        <article>
+            <div class="container" id="store" hidden>
+                
+                store
+                <hr>
+            </div>
         </article>
 
-        <article class="container" id="store" hidden>
-            store
-        </article>
+        <article>
+            <div class="container" id="about" hidden>
+                about
 
-        <article class="container" id="about" hidden>
-            about
+                <hr>
+            </div>
         </article>
+        
+        <article>
+            <div class="container" id="contact" hidden>
+                contact
 
-        <article class="container" id="contact" hidden>
-            contact
+                <hr>
+            </div>
         </article>
-
+        
         <script src="script/nav-script.js"></script>
     </main>
+    
+    <footer> 
+        <ul>
+            <img src="images/favicon.png" alt="favicon" width="25px" height="25px">
+            <li><span id="copyright-text">&copy; 2022 Coffee Teeth.</span></li>
+            <li><a href="https://github.com/matheusfdosan/" target="_blank" rel="external">My Github</a></li>
+            <li><a href="#home" onclick="clickhome()">Home</a></li>
+            <li><a href="#store" onclick="clickstore()">Store</a></li>
+            <li><a href="#about" onclick="clickabout()">About</a></li>
+            <li><a href="#contact" onclick="clickcontact()">Contact</a></li>
+        </ul>
+    </footer>
 </body>
 </html>

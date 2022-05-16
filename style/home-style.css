@@ -1,8 +1,14 @@
+div.container {
+    width: 90vw;
+    margin: auto;
+    padding-top: 10px;
+}
+
 div#slider {
     width: 100%;
     max-width: 1200px;
     height: 50vw;
-    max-height: 500px;
+    max-height: 400px;
     margin: auto;
 
     position: relative;
@@ -26,38 +32,15 @@ div#slider img.selected {
 }
 
 div.text {
-    font-size: 3vh;
+    font-size: 1.6em;
     font-family: Arial, Helvetica, sans-serif;
     text-align: justify;
     border-top: 5px solid #000;
     border-bottom: 5px solid #000;
+    width: 90vw;
+    max-width: 1200px;
+
 
     padding: 10px;
-    margin-top: 50px;
-    
-    width: 100%;
+    margin: 50px auto;
 }
-
-div#title-level-two {
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    font-size: 1.5em;
-}
-
-#items-list {
-    margin-left: 35px;
-    display: inline-flex;
-}
-
-.items {
-    width: 235px;
-    padding: 5px;
-    border: 1px solid #000;
-    margin: 10px;
-}
-
-.items img {
-    width: 223px;
-}
-
