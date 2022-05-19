@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 header {
     text-align: center;
     color: #000;
@@ -53,27 +57,21 @@ hr {
     display: block;
     margin: 20px auto;
     max-width: 1200px;
-
 }
 
 footer {
     width: 90vw;
     max-width: 1200px;
     margin: auto;
-    padding-top: 10px;
-}
-
-::-webkit-scrollbar {
-    display: none;
 }
 
 #items-footer li a {
     display: inline-block;
-    color: rgb(91, 91, 243);
+    color: #5b5bf3;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: lighter;
-    font-size: 12px;
+    font-size: 16px;
 }
 
 #items-footer li a:hover {
@@ -86,13 +84,19 @@ footer {
 
 #items-footer li {
     display: block;
-    padding-bottom: 5px;
-    margin: 2%;
+    margin-right: 3%;
+}
+
+#copyright {
+    text-align: center;
+    display: block;
 }
 
 #copyright-text {
+    word-wrap: break-word;
     font-family: Arial, Helvetica, sans-serif;
     color: #393c3f;
-    font-size: 12px;
+    font-size: 16px;
+    padding-bottom: 1px;
 }
 
