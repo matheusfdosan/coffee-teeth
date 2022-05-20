@@ -12,10 +12,12 @@
 </head>
 <body>
 
+    <!-- HEADER -->
     <header id="header">
         <h1>Coffee Teeth</h1>
     </header>
 
+    <!-- NAVIGATION -->
     <nav>
         <ul>
             <li><button id="btn1" onclick="clickhome()">HOME</button></li>
@@ -24,11 +26,15 @@
             <li><button id="btn4" onclick="clickcontact()">CONTACT</button></li>
         </ul>
     </nav>
-    
+
+    <!-- MAIN CONTENT -->
     <main>
 
+        <!-- HOME CONTENT -->
         <article>
             <div class="container" id="home">
+                
+                <!-- SLIDESHOW -->
                 <div id="slider-home">
                     <div id="slider">
                         <img class="selected" src="images/slider/coffee-image1.jpg" alt="img1">
@@ -38,15 +44,20 @@
                         <img src="images/slider/coffee-image5.jpg" alt="img5">
                     </div>
                 </div>
+
+                <!-- WEBSITE DESCRIPTION TEXT -->
                 <div class="text">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, aperiam ratione quasi aliquid nihil nisi est, quidem autem iure, debitis maxime et necessitatibus! Commodi aut impedit beatae iusto sit optio architecto facere dicta. Impedit, repudiandae? Asperiores praesentium ipsam doloremque dolor consectetur ullam! Cupiditate repudiandae similique quis.</p>
                 </div>
-            
+                
+                <!-- SOME PRODUCTS FROM THE STORE -->
+
                 <hr>
                 <script src="script/slider-script.js"></script>
             </div>
         </article>
         
+        <!-- STORE CONTENT -->
         <article>
             <div class="container" id="store" hidden>
                 
@@ -55,6 +66,7 @@
             </div>
         </article>
 
+        <!-- ABOUT CONTENT -->
         <article>
             <div class="container" id="about" hidden>
                 about
@@ -63,6 +75,7 @@
             </div>
         </article>
         
+        <!-- CONTACT CONTENT -->
         <article>
             <div class="container" id="contact" hidden>
                 contact
@@ -74,6 +87,7 @@
         <script src="script/nav-script.js"></script>
     </main>
     
+    <!-- MAIN FOOTER -->
     <footer> 
         <div id="items-footer">
             <ul>
@@ -95,5 +109,6 @@
             </ul>
         </div>
     </footer>
+
 </body>
 </html>
