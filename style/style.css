@@ -80,6 +80,10 @@ footer {
 
 #items-footer ul {
     display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 #items-footer li {
