@@ -13,19 +13,27 @@
 <body>
 
     <!-- HEADER -->
-    <header id="header">
-        <h1>Coffee Teeth</h1>
-    </header>
+    <header>
+        
+        <h1><a href="#" onclick="clickhome()"><span><img src="images/favicon.png" alt="favicon" width="50px"></span>Coffee Teeth</a></h1>
 
-    <!-- NAVIGATION -->
-    <nav>
-        <ul>
-            <li><button id="btn1" onclick="clickhome()">HOME</button></li>
-            <li><button id="btn2" onclick="clickstore()">STORE</button></li>
-            <li><button id="btn3" onclick="clickabout()">ABOUT</button></li>
-            <li><button id="btn4" onclick="clickcontact()">CONTACT</button></li>
-        </ul>
-    </nav>
+        <!-- NAVIGATION -->
+        <nav>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li><button id="btn1" onclick="clickhome()">HOME</button></li>
+                <li><button id="btn2" onclick="clickstore()">STORE</button></li>
+                <li><button id="btn3" onclick="clickabout()">ABOUT</button></li>
+                <li><button id="btn4" onclick="clickcontact()">CONTACT</button></li>
+                <li><button id="btn4" onclick="clickfeed()">FEEDBACK</button></li>
+                <li><button id="btn4" onclick="clicksearch()">SEARCH</button></li>
+            </ul>
+        </nav>
+    </header>
 
     <!-- MAIN CONTENT -->
     <main>
@@ -52,7 +60,6 @@
                 
                 <!-- SOME PRODUCTS FROM THE STORE -->
 
-                <hr>
                 <script src="script/slider-script.js"></script>
             </div>
         </article>
@@ -62,7 +69,6 @@
             <div class="container" id="store" hidden>
                 
                 store
-                <hr>
             </div>
         </article>
 
@@ -71,7 +77,6 @@
             <div class="container" id="about" hidden>
                 about
 
-                <hr>
             </div>
         </article>
         
@@ -80,15 +85,16 @@
             <div class="container" id="contact" hidden>
                 contact
 
-                <hr>
             </div>
         </article>
         
+        <script src="script/navbar.js"></script>
         <script src="script/nav-script.js"></script>
     </main>
     
     <!-- MAIN FOOTER -->
     <footer> 
+        <hr>
         <div id="items-footer">
             <ul>
                 <li id="copyright-text-li">
@@ -102,10 +108,9 @@
                     </div>
                 </li>
                 <li><a href="https://github.com/matheusfdosan/" target="_blank" rel="external">My Github</a></li>
-                <li><a href="#home" onclick="clickhome()">Home</a></li>
-                <li><a href="#store" onclick="clickstore()">Store</a></li>
-                <li><a href="#about" onclick="clickabout()">About</a></li>
-                <li><a href="#contact" onclick="clickcontact()">Contact</a></li>
+                <li><a href="/">Terms</a></li>
+                <li><a href="/">Privacy</a></li>
+                <li><a href="/">Docs</a></li>
             </ul>
         </div>
     </footer>
