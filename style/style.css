@@ -8,6 +8,16 @@
     text-decoration: none;
 }
 
+body, html {
+    overflow-x: hidden !important;
+}
+    
+@media (max-width: 786px) {
+    body, html {
+    overflow-x: hidden!important;
+    }
+}
+
 ::-webkit-scrollbar {
     display: none;
 }
@@ -46,6 +56,7 @@ nav {
 
 nav button {
     padding: 7px;
+    font-size: 1.2em;
     color: #000;
     background-color: transparent;
     border: transparent;
@@ -88,7 +99,7 @@ nav button:hover {
         position: absolute;
         top: 10vh;
         right: 0;
-        width: 20vw;
+        width: 30vw;
         height: 92vh;
         z-index: 1;
         background: #fff;
