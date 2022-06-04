@@ -5,115 +5,120 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="a coffee shop website, for coffee lovers!">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
         <link rel="stylesheet" href="style/style.css">
         <link rel="stylesheet" href="style/home-style.css">
         <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-    <title>Coffee Teeth</title>
-</head>
-<body>
+        <title>Coffee Teeth</title>
+    </head>
+    <body>
 
-    <!-- HEADER -->
-    <header>
+        <!-- HEADER -->
+        <header>
         
-        <h1><a href="#" onclick="clickhome()"><span><img src="images/favicon.png" alt="favicon" width="50px"></span>Coffee Teeth</a></h1>
+            <h1><a href="#"     onclick="clickhome()    "><span><img src="images/favicon.png" alt="favicon"     width="50px"></span>Coffee  Teeth</a></h1>
 
-        <!-- NAVIGATION -->
-        <nav>
-            <div class="mobile-menu">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-            <ul class="nav-list">
-                <li><button id="btn1" onclick="clickhome()">HOME</button></li>
-                <li><button id="btn2" onclick="clickstore()">STORE</button></li>
-                <li><button id="btn3" onclick="clickabout()">ABOUT</button></li>
-                <li><button id="btn4" onclick="clickcontact()">CONTACT</button></li>
-                <li><button id="btn4" onclick="clickfeed()">FEEDBACK</button></li>
-                <li><button id="btn4" onclick="clicksearch()">SEARCH</button></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- MAIN CONTENT -->
-    <main>
-
-        <!-- HOME CONTENT -->
-        <article>
-            <div class="container" id="home">
-                
-                <!-- SLIDESHOW -->
-                <div id="slider-home">
-                    <div id="slider">
-                        <img class="selected" src="images/slider/coffee-image1.jpg" alt="img1">
-                        <img src="images/slider/coffee-image2.jpg" alt="img2">
-                        <img src="images/slider/coffee-image3.jpg" alt="img3">
-                        <img src="images/slider/coffee-image4.jpg" alt="img4">
-                        <img src="images/slider/coffee-image5.jpg" alt="img5">
-                    </div>
+            <!-- NAVIGATION -->
+            <nav>
+                <div class="mobile-menu">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
                 </div>
-
-                <!-- WEBSITE DESCRIPTION TEXT -->
-                <div class="text">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, aperiam ratione quasi aliquid nihil nisi est, quidem autem iure, debitis maxime et necessitatibus! Commodi aut impedit beatae iusto sit optio architecto facere dicta. Impedit, repudiandae? Asperiores praesentium ipsam doloremque dolor consectetur ullam! Cupiditate repudiandae similique quis.</p>
-                </div>
-                
-                <!-- SOME PRODUCTS FROM THE STORE -->
-
-                <script src="script/slider-script.js"></script>
-            </div>
-        </article>
-        
-        <!-- STORE CONTENT -->
-        <article>
-            <div class="container" id="store" hidden>
-                
-                store
-            </div>
-        </article>
-
-        <!-- ABOUT CONTENT -->
-        <article>
-            <div class="container" id="about" hidden>
-                about
-
-            </div>
-        </article>
-        
-        <!-- CONTACT CONTENT -->
-        <article>
-            <div class="container" id="contact" hidden>
-                contact
-
-            </div>
-        </article>
-        
-        <script src="script/navbar.js"></script>
-        <script src="script/nav-script.js"></script>
-    </main>
-    
-    <!-- MAIN FOOTER -->
-    <footer> 
-        <hr>
-        <div id="items-footer">
-            <ul>
-                <li id="copyright-text-li">
-                    <div id="copyright">
-                        <div>
-                            <img src="images/favicon.png" alt="favicon" width="32px" height="32px">
+                <ul class="nav-list">
+                    <li><button id="btn1" onclick="clickhome()">HOME</button></li>
+                    <li><button id="btn2" onclick="clickstore()">STORE</button></li>
+                    <li><button id="btn3" onclick="clickabout()">ABOUT</button></li>
+                    <li><button id="btn4" onclick="clickcontact()">CONTACT</button></li>
+                    <li><button id="btn5" onclick="clickfeed()">FEEDBACK</button></li>
+                    <li>
+                        <div class="search">
+                            <input type="text" class="input" placeholder="Search...">
+                            <button id="btn6"><i class="fas fa-search"></i></button>
                         </div>
-                        <div  id="copyright-text">
-                            <span>&copy; 2022 Coffee Teeth.</span>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- MAIN CONTENT -->
+        <main>
+
+            <!-- HOME CONTENT -->
+            <article>
+                <div class="container" id="home">
+                    
+                    <!-- SLIDESHOW -->
+                    <div id="slider-home">
+                        <div id="slider">
+                            <img class="selected" src="images/slider/coffee-image1.jpg" alt="img1">
+                            <img src="images/slider/coffee-image2.jpg" alt="img2">
+                            <img src="images/slider/coffee-image3.jpg" alt="img3">
+                            <img src="images/slider/coffee-image4.jpg" alt="img4">
+                            <img src="images/slider/coffee-image5.jpg" alt="img5">
                         </div>
                     </div>
-                </li>
-                <li><a href="https://github.com/matheusfdosan/" target="_blank" rel="external">My Github</a></li>
-                <li><a href="/">Terms</a></li>
-                <li><a href="/">Privacy</a></li>
-                <li><a href="/">Docs</a></li>
-            </ul>
-        </div>
-    </footer>
 
-</body>
+                    <!-- WEBSITE DESCRIPTION TEXT -->
+                    <div class="text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, aperiam ratione quasi aliquid nihil nisi est, quidem autem iure, debitis maxime et necessitatibus! Commodi aut impedit beatae iusto sit optio architecto facere dicta. Impedit, repudiandae? Asperiores praesentium ipsam doloremque dolor consectetur ullam! Cupiditate repudiandae similique quis.</p>
+                    </div>
+                    
+                    <!-- SOME PRODUCTS FROM THE STORE -->
+
+                    <script src="script/slider-script.js"></script>
+                </div>
+            </article>
+            
+            <!-- STORE CONTENT -->
+            <article>
+                <div class="container" id="store" hidden>
+                    
+                    store
+                </div>
+            </article>
+
+            <!-- ABOUT CONTENT -->
+            <article>
+                <div class="container" id="about" hidden>
+                    about
+
+                </div>
+            </article>
+            
+            <!-- CONTACT CONTENT -->
+            <article>
+                <div class="container" id="contact" hidden>
+                    contact
+
+                </div>
+            </article>
+            
+            <script src="script/navbar.js"></script>
+            <script src="script/nav-script.js"></script>
+        </main>
+        
+        <!-- MAIN FOOTER -->
+        <footer> 
+            <hr>
+            <div id="items-footer">
+                <ul>
+                    <li id="copyright-text-li">
+                        <div id="copyright">
+                            <div>
+                                <img src="images/favicon.png" alt="favicon" width="32px" height="32px">
+                            </div>
+                            <div  id="copyright-text">
+                                <span>&copy; 2022 Coffee Teeth.</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="https://github.com/matheusfdosan/" target="_blank" rel="external">My Github</a></li>
+                    <li><a href="/">Terms</a></li>
+                    <li><a href="/">Privacy</a></li>
+                    <li><a href="/">Docs</a></li>
+                </ul>
+            </div>
+        </footer>
+    </body>
 </html>
