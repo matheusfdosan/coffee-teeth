@@ -1,10 +1,6 @@
 @charset "utf-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
-/* font-family: 'Roboto', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
     margin: 0; padding: 0;
@@ -12,10 +8,7 @@
     text-decoration: none;
 }
 
-::-webkit-scrollbar {
-    display: none;
-}
-
+/* HEADER CSS */
 header {
     display: flex;
     justify-content: space-between;
@@ -29,17 +22,31 @@ header {
     margin: auto;
 }
 
-header h1 {
-    font-weight: bolder;
+/* LOGO AND NAME CSS */
+.logo {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+span {
+    margin-right: 10px;
+}
+
+/* MAIN TITLE CSS */
+h1 {
+    font-weight: 400;
     font-size: 2em;
-    font-style: italic;
-    font-family: 'Merienda', cursive;
+    font-style: italic;    
+    font-family: 'Montserrat', sans-serif;
 }
 
-header h1 a {
-    color: #000;
-}
-
+/* NAVIGATION CSS */
 nav {
     display: flex;
     justify-content: space-around;
@@ -72,6 +79,7 @@ nav button:hover {
     margin-left: 32px;
 }
 
+/* RESPONSIVE NAVIGATION CSS */
 .mobile-menu {
     display: none;
     cursor: pointer;
@@ -153,6 +161,7 @@ nav button:hover {
     display: flex;
 }
 
+/* HAMBUGUER ANIMATION */
 @keyframes navLinkFade {
     from {
         opacity: 0;
@@ -177,17 +186,17 @@ nav button:hover {
     transform: rotate(45deg) translate(-5px, -7px);
 }
 
+/* SEARCH BUTTON */
 .search {
     position: relative;
-    height: 50px;
 }
 
 .search .input {
     background-color: #fff;
-    border-radius: 49px; 
+    border-radius: 49px;
     font-size: 18px; 
-    padding: 21px; 
-    width: 50px; height: 50px; 
+    padding: 18px; 
+    width: 40px; height: 40px;
     transition: width 0.3s ease;
 
 }
@@ -200,7 +209,7 @@ nav button:hover {
     font-size: 24px; 
     position: absolute; 
     top: 0; right: 0; 
-    width: 50px; height: 50px; 
+    width: 40px; height: 40px; 
     transition: transform 0.3s ease;
 }
 
@@ -217,6 +226,7 @@ nav button:hover {
     transform: translateX(198px);
 }
 
+/* FOTEER */
 footer {
     width: 90vw;
     max-width: 1200px;
