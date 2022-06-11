@@ -87,6 +87,7 @@ nav button:hover {
 }
 
 .mobile-menu div {
+    border-radius: 50px;
     width: 32px;
     height: 2px;
     background: #000;
@@ -107,7 +108,7 @@ nav button:hover {
         width: 20vw;
         height: 92vh;
         z-index: 1;
-        background: #fff;
+        background: #ffffffe6;
         flex-direction: column;
         align-items: center;
         transform: translateX(100%);
@@ -138,7 +139,7 @@ nav button:hover {
         width: 47vw;
         height: 92vh;
         z-index: 1;
-        background: #fff;
+        background: #ffffffe6;
         flex-direction: column;
         align-items: center;
         transform: translateX(100%);
@@ -228,17 +229,19 @@ nav button:hover {
 
 /* FOTEER */
 footer {
-    width: 90vw;
-    max-width: 1200px;
-    margin: auto;
+    display: flex;
     padding: 10px;
+    flex-wrap: wrap;
 }
 
 hr {
-    margin-bottom: 10px !important;
     display: block;
     margin: auto;
-    max-width: 1200px;
+    width: 99vw;
+}
+
+#items-footer {
+    margin-top: 10px;
 }
 
 #items-footer li a {
