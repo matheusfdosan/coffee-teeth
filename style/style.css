@@ -10,6 +10,9 @@
 
 /* HEADER CSS */
 header {
+    position: fixed;
+    background-color: #fff;
+    z-index: 1;
     display: flex;
     justify-content: space-between;
     text-align: center;
@@ -17,9 +20,8 @@ header {
     padding: 10px;
     color: #000;
     transition: .5s;
-    width: 90vw;
-    max-width: 1200px;
     margin: auto;
+    width: 100%;
 }
 
 /* LOGO AND NAME CSS */
@@ -80,13 +82,13 @@ nav button:hover {
 }
 
 /* RESPONSIVE NAVIGATION CSS */
-.mobile-menu {
+.hambuguer-menu {
     display: none;
     cursor: pointer;
     z-index: 2;
 }
 
-.mobile-menu div {
+.hambuguer-menu div {
     border-radius: 50px;
     width: 32px;
     height: 2px;
@@ -95,7 +97,7 @@ nav button:hover {
     transition: 0.5s;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
     body {
         overflow-x: hidden;
     }
@@ -121,7 +123,7 @@ nav button:hover {
         margin-top: 10px;
     }
     
-    .mobile-menu {
+    .hambuguer-menu {
         display: block;
     }
 }
@@ -152,7 +154,7 @@ nav button:hover {
         margin-top: 10px;
     }
     
-    .mobile-menu {
+    .hambuguer-menu {
         display: block;
     }
 }
@@ -175,15 +177,15 @@ nav button:hover {
     }
 }
 
-.mobile-menu.active .line1 {
+.hambuguer-menu.active .line1 {
     transform: rotate(-45deg) translate(-8px, 8px);
 }
 
-.mobile-menu.active .line2 {
+.hambuguer-menu.active .line2 {
     opacity: 0;
 }
 
-.mobile-menu.active .line3 {
+.hambuguer-menu.active .line3 {
     transform: rotate(45deg) translate(-5px, -7px);
 }
 
@@ -227,7 +229,7 @@ nav button:hover {
     transform: translateX(198px);
 }
 
-/* FOTEER */
+/* FOOTER */
 footer {
     display: flex;
     padding: 10px;

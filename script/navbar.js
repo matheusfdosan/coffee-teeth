@@ -33,7 +33,7 @@ class MobileNavbar {
 }
 
 const mobileNavbar = new MobileNavbar(
-  ".mobile-menu",
+  ".hambuguer-menu",
   ".nav-list",
   ".nav-list li",
 );
