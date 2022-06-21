@@ -5,11 +5,14 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="a coffee shop website, for coffee lovers!">
+        
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-        <link rel="stylesheet" href="style/style.css">
-        <link rel="stylesheet" href="style/home-style.css">
-        <link rel="stylesheet" href="style/store-style.css">
-        <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/home.css">
+        <link rel="stylesheet" href="css/store.css">
+
+        <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+        
         <title>Coffee Teeth</title> 
     </head>
     <body>
@@ -18,7 +21,7 @@
         <header>
 
             <div class="logo" onclick="clickhome()">
-                <span><img src="images/favicon.png" alt="favicon" width="50px"></span>
+                <span class="favicon-span"><img src="img/favicon.png" alt="favicon" width="50px"></span>
                 <h1>Coffee Teeth</h1>
             </div>
             
@@ -34,11 +37,11 @@
 
                 <!-- NAVIGATION BUTTONS  -->
                 <ul class="nav-list">
-                    <li><button id="btn1" onclick="clickhome()">HOME</button></li>
-                    <li><button id="btn2" onclick="clickstore()">STORE</button></li>
-                    <li><button id="btn3" onclick="clickabout()">ABOUT</button></li>
-                    <li><button id="btn4" onclick="clickcontact()">CONTACT</button></li>
-                    <li><button id="btn5" onclick="clickfeed()">FEEDBACK</button></li>
+                    <li><button class="nav-list-btn" id="btn1" onclick="clickhome()">HOME</button></li>
+                    <li><button class="nav-list-btn" id="btn2" onclick="clickstore()">STORE</button></li>
+                    <li><button class="nav-list-btn" id="btn3" onclick="clickabout()">ABOUT</button></li>
+                    <li><button class="nav-list-btn" id="btn4" onclick="clickcontact()">CONTACT</button></li>
+                    <li><button class="nav-list-btn" id="btn5" onclick="clickfeed()">FEEDBACK</button></li>
 
                     <!-- SEARCH BUTTON -->
                     <li>
@@ -55,153 +58,146 @@
         <main>
 
             <!-- HOME CONTENT -->
-            <article>
-                <div class="container" id="home">
-                    
-                    <!-- SLIDESHOW -->
-                    <div id="slider-home">
-                        <div id="slider">
-                            <img class="selected" src="images/slider/coffee-image1.jpg" alt="img1">
-                            <img src="images/slider/coffee-image2.jpg" alt="img2">
-                            <img src="images/slider/coffee-image3.jpg" alt="img3">
-                            <img src="images/slider/coffee-image4.jpg" alt="img4">
-                            <img src="images/slider/coffee-image5.jpg" alt="img5">
-                        </div>
-
-                        <!-- SLOGAN -->
-                        <div class="text">
-                            <p>Buy a cup of coffee so you can work better</p>
-                        </div>
+            <div class="container" id="home">
+                
+                <!-- SLIDESHOW -->
+                <div id="slider-home">
+                    <div id="slider">
+                        <img class="selected" src="img/slider/coffee-image1.jpg" alt="img1">
+                        <img src="img/slider/coffee-image2.jpg" alt="img2">
+                        <img src="img/slider/coffee-image3.jpg" alt="img3">
+                        <img src="img/slider/coffee-image4.jpg" alt="img4">
+                        <img src="img/slider/coffee-image5.jpg" alt="img5">
                     </div>
-                    
-                    <script src="script/slider-script.js"></script>
-                </div>
-            </article>
-            
-            <!-- STORE CONTENT -->
-            <article>
-                <div class="container" id="store" hidden>
 
+                    <!-- SLOGAN -->
+                    <div class="text">
+                        <p>Buy a cup of coffee so you can work better</p>
+                    </div>
+                </div>
+                
+            </div>
+
+            <!-- STORE CONTENT -->
+            <div class="container" id="store" hidden>
+
+                <div class="items-store">
 
                     <!-- STORE ITEMS BLOCKS -->
                     <div class="items" id="amaretto-coffee">
                         <figure class="fig-img">
-                            <img src="images/coffee-bags/amaretto-coffee.jpeg" alt="amaretto-coffee">
+                            <img src="img/coffee-bags/amaretto-coffee.jpeg" alt="amaretto-coffee">
                             <figcaption>Amaretto Coffee<br>Price: $4.51</figcaption>
                         </figure>
                     </div>
 
                     <div class="items" id="cappuccino-coffee">
                         <figure class="fig-img">
-                            <img src="images/coffee-bags/cappuccino-coffee.jpeg" alt="cappuccino-coffee">
+                            <img src="img/coffee-bags/cappuccino-coffee.jpeg" alt="cappuccino-coffee">
                             <figcaption>Cappuccino Coffee<br>Price: $4.36</figcaption>
                         </figure>
                     </div>
 
                     <div class="items" id="espresso-coffee">
                         <figure class="fig-img">
-                            <img src="images/coffee-bags/espresso-coffee.jpeg" alt="espresso-coffee">
+                            <img src="img/coffee-bags/espresso-coffee.jpeg" alt="espresso-coffee">
                             <figcaption>Espresso Coffee<br>Price: $3.91</figcaption>
                         </figure>
                     </div>
 
                     <div class="items" id="macchiato-coffee">
                         <figure class="fig-img">
-                            <img src="images/coffee-bags/macchiatto-coffee.jpeg" alt="macchiato-coffee">
+                            <img src="img/coffee-bags/macchiatto-coffee.jpeg" alt="macchiato-coffee">
                             <figcaption>Macchiato Coffee<br>Price: $3.75</figcaption>
                         </figure>
                     </div>
 
                     <div class="items" id="ristretto-coffee">
                         <figure class="fig-img">
-                            <img src="images/coffee-bags/ristretto-coffee.jpeg" alt="ristretto-coffee">
+                            <img src="img/coffee-bags/ristretto-coffee.jpeg" alt="ristretto-coffee">
                             <figcaption>Ristretto Coffee<br>Price: $4.01</figcaption>
                         </figure>
                     </div>
-                    
+
                     <div class="items" id="mocha-coffee">
                         <figure class="fig-img">
-                            <img src="images/coffee-bags/mocha-coffee.jpeg" alt="mocha-coffee">
+                            <img src="img/coffee-bags/mocha-coffee.jpeg" alt="mocha-coffee">
                             <figcaption>Mocha Coffee<br>Price: $3.45</figcaption>
                         </figure>
                     </div>
-                    
+
                     <div class="items" id="american-ristretto">
                         <figure class="fig-img">
-                            <img src="images/coffee-bags/american-ristretto-coffee.jpeg" alt="american-ristretto">
+                            <img src="img/coffee-bags/american-ristretto-coffee.jpeg" alt="american-ristretto">
                             <figcaption>American Ristretto Coffee<br>Price: $5.95</figcaption>
                         </figure>
                     </div>
-                    
+
                     <div class="items" id="americano-coffee">
                         <figure class="fig-img">
-                            <img src="images/coffee-bags/american-coffee.jpeg" alt="americano-coffee">
+                            <img src="img/coffee-bags/american-coffee.jpeg" alt="americano-coffee">
                             <figcaption>Americano Coffee<br>Price:  $2.62</figcaption>
                         </figure>
                     </div>
 
                     <div class="items" id="arabic-coffee">
                         <figure class="fig-img">
-                            <img src="images/coffee-bags/arabic-coffee.jpeg" alt="arabic-coffee">
+                            <img src="img/coffee-bags/arabic-coffee.jpeg" alt="arabic-coffee">
                             <figcaption>Arabic Coffee<br>Price: $5.12</figcaption>
                         </figure>
                     </div>
 
                     <div class="items" id="doppio-coffee">
                         <figure class="fig-img">
-                            <img src="images/coffee-bags/doppio-coffee.jpeg" alt="doppio-coffee">
+                            <img src="img/coffee-bags/doppio-coffee.jpeg" alt="doppio-coffee">
                             <figcaption>Doppio Coffee<br>Price: $4.10</figcaption>
                         </figure>
                     </div>
 
                     <div class="items" id="instant-coffee">
                         <figure class="fig-img">
-                            <img src="images/coffee-bags/instant-coffee.jpeg" alt="instant-coffee">
+                            <img src="img/coffee-bags/instant-coffee.jpeg" alt="instant-coffee">
                             <figcaption>Instant Coffee<br>Price: $2.30</figcaption>
                         </figure>
                     </div>
 
                     <div class="items" id="classic-coffee">
                         <figure class="fig-img">
-                            <img src="images/coffee-bags/classic-coffee.jpeg" alt="classic-coffee">
+                            <img src="img/coffee-bags/classic-coffee.jpeg" alt="classic-coffee">
                             <figcaption>Classic Coffee<br>Price: $1.99</figcaption>
                         </figure>
                     </div>
-
+                
                 </div>
-            </article>
+
+            </div>
 
             <!-- ABOUT CONTENT -->
-            <article>
-                <div class="container" id="about" hidden>
-                    about
+            <div class="container" id="about" hidden>
+                about
 
-                </div>
-            </article>
+            </div>
             
             <!-- CONTACT CONTENT -->
-            <article>
-                <div class="container" id="contact" hidden>
-                    contact
+            <div class="container" id="contact" hidden>
+                contact
 
-                </div>
-            </article>
+            </div>
             
-            <script src="script/navbar.js"></script>
-            <script src="script/nav-script.js"></script>
         </main>
         
         <!-- MAIN FOOTER -->
         <footer> 
-            <hr>
-            <div id="items-footer">
+            <div class="horizontal-row"></div>
+
+            <div class="main-footer">
                 <ul>
-                    <li id="copyright-text-li">
-                        <div id="copyright">
+                    <li>
+                        <div class="copyright">
                             <div>
-                                <img src="images/favicon.png" alt="favicon" width="32px" height="32px">
+                                <img src="img/favicon.png" alt="favicon" width="32px" height="32px">
                             </div>
-                            <div  id="copyright-text">
+                            <div class="copyright-text">
                                 <span>&copy; 2022 Coffee Teeth.</span>
                             </div>
                         </div>
@@ -213,5 +209,10 @@
                 </ul>
             </div>
         </footer>
+
+        <script src="js/slider.js"></script>
+        <script src="js/navbar.js"></script>
+        <script src="js/nav-script.js"></script>
+
     </body>
 </html>

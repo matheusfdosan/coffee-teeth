@@ -1,7 +1,7 @@
-var home = document.getElementById('home') 
-var store = document.getElementById('store') 
-var about = document.getElementById('about') 
-var contact = document.getElementById('contact')
+var home = document.querySelector('#home') 
+var store = document.querySelector('#store') 
+var about = document.querySelector('#about') 
+var contact = document.querySelector('#contact')
 
 function clickhome() {
     home.removeAttribute('hidden', 'hidden')
