@@ -1,0 +1,30 @@
+/* MAIN */
+main {
+    background-color: var(--color-white-light);
+}
+
+/* SLIDER */
+#slider {
+    width: 100%;
+    height: 31vw;
+
+    position: relative;
+}
+
+#slider img {
+    opacity: 0;
+    position: absolute;
+    display: flex;
+    
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    transition: 1.5s;
+}
+
+#slider img.selected {
+    opacity: 1;
+}

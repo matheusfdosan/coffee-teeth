@@ -1,0 +1,103 @@
+/* FOOTER */
+
+footer {
+    border-top: 1px solid #202121;
+    background-color: var(--color-white);
+}
+
+/* FOOTER SOCIAL NETWORKING */
+.social-networking {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: left;
+    border-bottom: 1px solid var(--color-black-dark-1);
+    padding: 10px;
+}
+
+.social-networking h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+    margin: 10px;
+}
+
+.social-networking a {
+    color: var(--color-font-link-blue);
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 10px;
+}
+
+/* MENU FOOTER */
+.menu-footer {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.menu-footer a {
+    color: var(--color-font-link-blue);
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 10px;
+}
+
+.uk-flag {
+    width: 30px;
+}
+
+/* WIDTH SETTINGS */
+
+/* 380PX WIDTH SETTINGS */
+
+@media screen and (max-width: 380px) {
+    .menu_footer {
+        font-size: 1rem;
+    }
+
+    .social_menu {
+        font-size: 1rem;
+    }
+}
+
+/* 360PX WIDTH SETTINGS */
+
+@media screen and (max-width: 360px) {
+    .menu_footer {
+        font-size: .8rem;
+    }
+
+    .social_menu {
+        font-size: .8rem;
+    }
+}
+
+/* 320PX WIDTH SETTINGS */
+
+@media screen and (max-width: 320px) {
+    .menu_footer {
+        font-size: .8rem;
+    }
+
+    .social_menu {
+        font-size: .8rem;
+    }
+}
+
+/* 285PX WIDTH SETTINGS */
+
+@media screen and (max-width: 285px) {
+    .menu_footer {
+        font-size: .8rem;
+    }
+
+    .social_menu {
+        font-size: .8rem;
+    }
+}

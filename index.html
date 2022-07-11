@@ -1,218 +1,210 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
     <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="a coffee shop website, for coffee lovers!">
-        
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/home.css">
-        <link rel="stylesheet" href="css/store.css">
 
+        <meta charset='UTF-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
         <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+        <link rel='stylesheet' href='css/configs.css'>
+
+        <link rel="stylesheet" href="css/header-navbar.css">
+        <link rel="stylesheet" href="css/main-slider.css">
+        <link rel="stylesheet" href="css/we_work.css">
+        <link rel="stylesheet" href="css/slider_items.css">
+        <link rel="stylesheet" href="css/community.css">
+        <link rel="stylesheet" href="css/footer.css">
         
-        <title>Coffee Teeth</title> 
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+        <title>Coffee Teeth</title>
+
     </head>
     <body>
 
         <!-- HEADER -->
         <header>
 
-            <div class="logo" onclick="clickhome()">
-                <span class="favicon-span"><img src="img/favicon.png" alt="favicon" width="50px"></span>
-                <h1>Coffee Teeth</h1>
-            </div>
-            
-            <!-- NAVIGATION -->
-            <nav>
+            <div class="header">
+                
+                <!-- NAVIGATION -->
+                <nav>
 
-                <!-- NAV BAR -->
-                <div class="hambuguer-menu">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
+                    <!-- NAV BAR -->
+                    <div class="hambuguer-menu">
+                        <span class="material-symbols-outlined">menu</span>
+                    </div>
+
+                </nav>
+                
+                <!-- LOGO AND NAME -->
+                <div class="logo">
+                    <img class="favicon" src="img/favicon.png" alt="favicon">
+                    <h1>Coffee Teeth</h1>
                 </div>
 
-                <!-- NAVIGATION BUTTONS  -->
-                <ul class="nav-list">
-                    <li><button class="nav-list-btn" id="btn1" onclick="clickhome()">HOME</button></li>
-                    <li><button class="nav-list-btn" id="btn2" onclick="clickstore()">STORE</button></li>
-                    <li><button class="nav-list-btn" id="btn3" onclick="clickabout()">ABOUT</button></li>
-                    <li><button class="nav-list-btn" id="btn4" onclick="clickcontact()">CONTACT</button></li>
-                    <li><button class="nav-list-btn" id="btn5" onclick="clickfeed()">FEEDBACK</button></li>
+                <!-- UTILITY ITEMS -->
+                <div class="utility-items">
+                    <!-- SEARCH -->
+                    <span class="material-symbols-outlined">search</span>
+                    
+                    <!-- SHOPPING CART -->
+                    <span class="material-symbols-outlined">shopping_cart</span>
 
-                    <!-- SEARCH BUTTON -->
-                    <li>
-                        <div class="search">
-                            <input type="text" class="input" placeholder="Search...">
-                            <button id="btn6"><i class="fas fa-search"></i></button>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
+                    <!-- ACCOUNT -->
+                    <span class="material-symbols-outlined">account_circle</span>
+                </div>
+            </div>
         </header>
 
-        <!-- MAIN CONTENT -->
-        <main>
+        <ul class="nav-list">
+            <li class="nav-list-btn">Store</li>
+            <li class="nav-list-btn">Community</li>
+            <li class="nav-list-btn">About</li>
+            <li class="nav-list-btn">Light<span class="material-symbols-outlined">toggle_off</span></li>
+            <li class="nav-list-btn">English <img class="uk-flag" src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/125px-Flag_of_the_United_Kingdom.svg.png" alt="uk-flag"></li>
+        </ul>
 
-            <!-- HOME CONTENT -->
-            <div class="container" id="home">
-                
-                <!-- SLIDESHOW -->
-                <div id="slider-home">
-                    <div id="slider">
-                        <img class="selected" src="img/slider/coffee-image1.jpg" alt="img1">
-                        <img src="img/slider/coffee-image2.jpg" alt="img2">
-                        <img src="img/slider/coffee-image3.jpg" alt="img3">
-                        <img src="img/slider/coffee-image4.jpg" alt="img4">
-                        <img src="img/slider/coffee-image5.jpg" alt="img5">
-                    </div>
+        <!-- HOME -->
+        <main class="home">
 
-                    <!-- SLOGAN -->
-                    <div class="text">
-                        <p>Buy a cup of coffee so you can work better</p>
-                    </div>
+            <!-- SLIDER -->
+            <div id="slider-home">
+                <div id="slider">
+                    <img src="img/slider/coffee-image1.jpg" alt="img1" class="selected">
+                    <img src="img/slider/coffee-image2.jpg" alt="img2">
+                    <img src="img/slider/coffee-image3.jpg" alt="img3">
+                    <img src="img/slider/coffee-image4.jpg" alt="img4">
+                    <img src="img/slider/coffee-image5.jpg" alt="img5">
                 </div>
-                
             </div>
 
-            <!-- STORE CONTENT -->
-            <div class="container" id="store" hidden>
+            <!-- WE WORK -->
+            <div class="we-work">  
+                <div class="we-work-container">
 
-                <div class="items-store">
-
-                    <!-- STORE ITEMS BLOCKS -->
-                    <div class="items" id="amaretto-coffee">
-                        <figure class="fig-img">
-                            <img src="img/coffee-bags/amaretto-coffee.jpeg" alt="amaretto-coffee">
-                            <figcaption>Amaretto Coffee<br>Price: $4.51</figcaption>
-                        </figure>
+                    <div class="we-work-header">
+                        <h2>We Work</h2>
                     </div>
 
-                    <div class="items" id="cappuccino-coffee">
-                        <figure class="fig-img">
-                            <img src="img/coffee-bags/cappuccino-coffee.jpeg" alt="cappuccino-coffee">
-                            <figcaption>Cappuccino Coffee<br>Price: $4.36</figcaption>
-                        </figure>
-                    </div>
-
-                    <div class="items" id="espresso-coffee">
-                        <figure class="fig-img">
-                            <img src="img/coffee-bags/espresso-coffee.jpeg" alt="espresso-coffee">
-                            <figcaption>Espresso Coffee<br>Price: $3.91</figcaption>
-                        </figure>
-                    </div>
-
-                    <div class="items" id="macchiato-coffee">
-                        <figure class="fig-img">
-                            <img src="img/coffee-bags/macchiatto-coffee.jpeg" alt="macchiato-coffee">
-                            <figcaption>Macchiato Coffee<br>Price: $3.75</figcaption>
-                        </figure>
-                    </div>
-
-                    <div class="items" id="ristretto-coffee">
-                        <figure class="fig-img">
-                            <img src="img/coffee-bags/ristretto-coffee.jpeg" alt="ristretto-coffee">
-                            <figcaption>Ristretto Coffee<br>Price: $4.01</figcaption>
-                        </figure>
-                    </div>
-
-                    <div class="items" id="mocha-coffee">
-                        <figure class="fig-img">
-                            <img src="img/coffee-bags/mocha-coffee.jpeg" alt="mocha-coffee">
-                            <figcaption>Mocha Coffee<br>Price: $3.45</figcaption>
-                        </figure>
-                    </div>
-
-                    <div class="items" id="american-ristretto">
-                        <figure class="fig-img">
-                            <img src="img/coffee-bags/american-ristretto-coffee.jpeg" alt="american-ristretto">
-                            <figcaption>American Ristretto Coffee<br>Price: $5.95</figcaption>
-                        </figure>
-                    </div>
-
-                    <div class="items" id="americano-coffee">
-                        <figure class="fig-img">
-                            <img src="img/coffee-bags/american-coffee.jpeg" alt="americano-coffee">
-                            <figcaption>Americano Coffee<br>Price:  $2.62</figcaption>
-                        </figure>
-                    </div>
-
-                    <div class="items" id="arabic-coffee">
-                        <figure class="fig-img">
-                            <img src="img/coffee-bags/arabic-coffee.jpeg" alt="arabic-coffee">
-                            <figcaption>Arabic Coffee<br>Price: $5.12</figcaption>
-                        </figure>
-                    </div>
-
-                    <div class="items" id="doppio-coffee">
-                        <figure class="fig-img">
-                            <img src="img/coffee-bags/doppio-coffee.jpeg" alt="doppio-coffee">
-                            <figcaption>Doppio Coffee<br>Price: $4.10</figcaption>
-                        </figure>
-                    </div>
-
-                    <div class="items" id="instant-coffee">
-                        <figure class="fig-img">
-                            <img src="img/coffee-bags/instant-coffee.jpeg" alt="instant-coffee">
-                            <figcaption>Instant Coffee<br>Price: $2.30</figcaption>
-                        </figure>
-                    </div>
-
-                    <div class="items" id="classic-coffee">
-                        <figure class="fig-img">
-                            <img src="img/coffee-bags/classic-coffee.jpeg" alt="classic-coffee">
-                            <figcaption>Classic Coffee<br>Price: $1.99</figcaption>
-                        </figure>
-                    </div>
-                
-                </div>
-
-            </div>
-
-            <!-- ABOUT CONTENT -->
-            <div class="container" id="about" hidden>
-                about
-
-            </div>
-            
-            <!-- CONTACT CONTENT -->
-            <div class="container" id="contact" hidden>
-                contact
-
-            </div>
-            
-        </main>
-        
-        <!-- MAIN FOOTER -->
-        <footer> 
-            <div class="horizontal-row"></div>
-
-            <div class="main-footer">
-                <ul>
-                    <li>
-                        <div class="copyright">
-                            <div>
-                                <img src="img/favicon.png" alt="favicon" width="32px" height="32px">
-                            </div>
-                            <div class="copyright-text">
-                                <span>&copy; 2022 Coffee Teeth.</span>
-                            </div>
+                    <div class="we-work-content">
+                        
+                        <div class="we-work-words">
+                            <p>From planting to cup, our coffee is grown, harvested, roasted and packaged following strict quality and sustainability criteria, following the same standards as the best gourmet coffees in the world.</p>
                         </div>
-                    </li>
-                    <li><a href="https://github.com/matheusfdosan/" target="_blank" rel="external">My Github</a></li>
-                    <li><a href="/">Terms</a></li>
-                    <li><a href="/">Privacy</a></li>
-                    <li><a href="/">Docs</a></li>
-                </ul>
+
+                        <div class="we-work-img">
+                            <img src="https://www.oswaldocruz.com/site/images/artigos/pesquisa_cafe_coracao.jpg" alt="coffee-img">
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <!-- WE WORK BUTTONS -->
+                <div class="we-work-btns">
+                    <button class="we-work-btn">Store</button>
+                    <button class="we-work-btn">Discover</button>
+                </div>
             </div>
-        </footer>
+
+            <!-- STORE ITEMS -->
+            <div class="items">
+
+                <span class="material-symbols-outlined">chevron_left</span>
+
+                <div class="fig-items">
+                    <figure class="fig-content">
+                        <img src="img/coffee-bags/coffee-bag-clean.jpeg" alt="coffee-bag-clean">
+                        <figcaption>Coffee Classic <br>Price: $2.50</figcaption>
+                    </figure>
+                    
+                    <figure class="fig-content">
+                        <img src="img/coffee-bags/coffee-bag-clean.jpeg" alt="coffee-bag-clean">
+                        <figcaption>Coffee Classic <br>Price: $2.50</figcaption>
+                    </figure>
+
+                    <figure class="fig-content">
+                        <img src="img/coffee-bags/coffee-bag-clean.jpeg" alt="coffee-bag-clean">
+                        <figcaption>Coffee Classic <br>Price: $2.50</figcaption>
+                    </figure>
+
+                    <figure class="fig-content">
+                        <img src="img/coffee-bags/coffee-bag-clean.jpeg" alt="coffee-bag-clean">
+                        <figcaption>Coffee Classic <br>Price: $2.50</figcaption>
+                    </figure>
+
+                    <figure class="fig-content">
+                        <img src="img/coffee-bags/coffee-bag-clean.jpeg" alt="coffee-bag-clean">
+                        <figcaption>Coffee Classic <br>Price: $2.50</figcaption>
+                    </figure>
+                </div>
+
+                <span class="material-symbols-outlined">chevron_right</span>
+
+            </div>
+            
+            <!-- COMMUNITY -->
+            <div class="community">
+                <h2>Community</h2>
+
+                <!-- COMMUNITY POSTS -->
+                <div class="commun-post">
+                    <figure>
+                        <img src="https://images.pexels.com/photos/7333831/pexels-photo-7333831.jpeg?auto=compress&cs=tinysrgb&h=566.525&fit=crop&w=633.175&dpr=1" alt="">
+                        <figcaption>
+                            Pedro, July 3 2022 <br> beautiful thing ❤
+                        </figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="https://www.everydaycoffee.pt/wp-content/uploads/2020/11/img1.jpg" alt="">
+                        <figcaption>
+                            Martha, July 1 2022 <br> weekend coffee 😁☕❤
+                        </figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="https://cdn.vox-cdn.com/thumbor/18BnqAY63OizCLv46eYQcBYFnks=/0x171:2048x1195/fit-in/1200x600/cdn.vox-cdn.com/uploads/chorus_asset/file/23235440/Interlude.jpeg" alt="">
+                        <figcaption>
+                            Zoe, June 29 2022 <br> to clear the mind
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="load-more">
+                    <button>Load More</button>
+                </div>
+            </div>
+
+            <!-- FOOTER -->
+            <footer>
+
+                <!-- FOOTER SOCIAL NETWORKING -->
+                <div class="social-networking">
+                    <h3>Follow us</h3>  
+                    
+                    <div class="links">
+                        <a href="/" class="social_menu" target="_blank">instagram</a>
+                        <a href="/" class="social_menu" target="_blank">linkedin</a>
+                        <a href="/" class="social_menu" target="_blank">github</a>
+                    </div>
+                </div>
+
+                <!-- MENU FOOTER -->
+                <div class="menu-footer">
+                    <a href="/" class="menu_footer">Legal Terms</a>
+                    <a href="/" class="menu_footer">F.A.Q</a>
+                    <a href="/" class="menu_footer">Cookies Policy</a>
+                    <a href="/" class="menu_footer">Contact Us</a>
+                    <a href="/" class="menu_footer">Privacy Policy</a>
+                    <a href="/" class="menu_footer">English <img class="uk-flag" src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/125px-Flag_of_the_United_Kingdom.svg.png" alt="uk-flag"></a>
+                </div>
+
+            </footer>
+
+        </main>
 
         <script src="js/slider.js"></script>
         <script src="js/navbar.js"></script>
-        <script src="js/nav-script.js"></script>
-
     </body>
 </html>

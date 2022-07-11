@@ -1,0 +1,60 @@
+/* COMMUNITY */
+
+.community {
+    margin-bottom: 20px;
+}
+
+
+.community h2 {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    font-family: 'Montserrat', sans-serif;
+    margin: 20px auto;
+    text-align: center;
+    padding: 7px;
+    max-width: 300px;
+    display: block;
+}
+
+.commun-post {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.community figure {
+    margin: 33px;
+    max-width: 300px;
+    display: flex;
+    width: 96vw;
+    height: 250px;
+    flex-direction: column;
+}
+
+.community img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.community figcaption {
+    background-color: var(--color-white);
+    padding: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.load-more button {
+    display: block;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    font-family: 'Montserrat', sans-serif;
+    margin: auto;
+    border: transparent;
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: 5px;
+}

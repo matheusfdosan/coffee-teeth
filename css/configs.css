@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+/* MONTSERRAT FONT */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* COLORS */
+:root {
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+
+    --color-white-light: #E6EAEA;
+    --color-brown-light: #654A24;
+    
+    --color-black-dark-1: #202121;
+    --color-black-dark-2: #3A3A3A;
+    --color-brown-dark: #8D6934;
+
+    --color-font-gray-dark-1: #9E9E9E;
+    --color-font-gray-dark-3: #8f8f8fbd;
+    --color-font-gray-dark-2: #3A3A3A;
+    --color-font-link-blue: #324A9F;
+}

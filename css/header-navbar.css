@@ -1,0 +1,325 @@
+/* HEADER */
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 4px;
+}
+
+span.material-symbols-outlined {
+    font-size: 40px;
+    margin: 0px 10px;
+}
+
+span.material-symbols-outlined:hover {
+    cursor: pointer;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+}
+
+.favicon {
+    width: 40px; height: 40px;
+    margin: 0px 10px;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 1.8em;
+    font-style: italic;    
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Helvetica, Arial, sans-serif;
+    flex-direction: column;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+/* RESPONSIVE NAVIGATION CSS */
+.hambuguer-menu {
+    display: none;
+    cursor: pointer;
+    z-index: 2;
+}
+
+@media (max-width: 2778px) {
+
+    .nav-list {
+        display: none;
+        width: 100%;
+        z-index: 1;
+        flex-direction: row;
+        align-items: center;
+        transition: transform .3s ease-in;
+    }
+
+    .nav-list li {
+        margin: 3px 15px;
+        opacity: 0;
+        margin-top: 10px;
+        display: flex;
+        list-style: none;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        align-items: center;
+    }
+    
+    .hambuguer-menu {
+        display: block;
+    }
+}
+
+.nav-list.active {
+    border-top: 1px solid #000;
+    transform: translateX(0);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* HAMBUGUER ANIMATION */
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* WIDTH SETTINGS */
+
+/* 676PX WIDTH SETTINGS */
+
+@media screen and (max-width: 676px) {
+    .hamburguer-menu {
+        display: flex;
+        width: 30px;
+        height: 30px;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .favicon {
+        width: 35px; height: 35px; 
+    }
+
+    span.material-symbols-outlined {
+        font-size: 35px;
+        margin: 0px 10px;
+    }
+}
+
+/* 561PX WIDTH SETTINGS */
+
+@media screen and (max-width: 561px) {
+    .hamburguer-menu {
+        display: flex;
+        width: 30px;
+        height: 30px;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .favicon {
+        width: 30px; height: 30px; 
+    }
+
+    .logo h1 {
+        font-size: 1.3rem;
+    }
+
+    span.material-symbols-outlined {
+        font-size: 30px;
+        margin: 0px 10px;
+    }
+}
+
+/* 520PX WIDTH SETTINGS */
+
+@media screen and (max-width: 520px) {
+    .hamburguer-menu {
+        display: flex;
+        width: 30px;
+        height: 30px;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .favicon {
+        width: 25px; height: 25px; 
+    }
+
+    .logo h1 {
+        font-size: 1rem;
+    }
+
+    span.material-symbols-outlined {
+        font-size: 25px;
+        margin: 0px 9px;
+    }
+}
+
+/* 510PX WIDTH SETTINGS */
+
+@media screen and (max-width: 510px) {
+    .hamburguer-menu {
+        display: flex;
+        width: 30px;
+        height: 30px;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .favicon {
+        width: 20px; height: 20px; 
+    }
+
+    .logo h1 {
+        font-size: .8rem;
+    }
+
+    span.material-symbols-outlined {
+        font-size: 20px;
+        margin: 0px 9px;
+    }
+}
+
+/* 400PX WIDTH SETTINGS */
+
+@media screen and (max-width: 400px) {
+    .hamburguer-menu {
+        display: flex;
+        width: 30px;
+        height: 30px;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .favicon {
+        width: 20px; height: 20px; 
+    }
+
+    .logo h1 {
+        font-size: .8rem;
+    }
+
+    span.material-symbols-outlined {
+        font-size: 20px;
+        margin: 0px 9px;
+    }
+}
+
+/* 380PX WIDTH SETTINGS */
+
+@media screen and (max-width: 380px) {
+    .hamburguer-menu {
+        display: flex;
+        width: 30px;
+        height: 30px;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .favicon {
+        width: 20px; height: 20px; 
+    }
+
+    .logo h1 {
+        font-size: .8rem;
+    }
+
+    span.material-symbols-outlined {
+        font-size: 20px;
+        margin: 0px 9px;
+    }
+}
+
+/* 360PX WIDTH SETTINGS */
+
+@media screen and (max-width: 360px) {
+    .hamburguer-menu {
+        display: flex;
+        width: 30px;
+        height: 30px;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .favicon {
+        width: 18px; height: 18px; 
+    }
+
+    .logo h1 {
+        font-size: .7rem;
+    }
+
+    .material-symbols-outlined {
+        font-size: 18px;
+        margin: 0px 5px;
+    }
+}
+
+/* 320PX WIDTH SETTINGS */
+
+@media screen and (max-width: 320px) {
+    .hamburguer-menu {
+        display: flex;
+        width: 30px;
+        height: 30px;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .favicon {
+        width: 18px; height: 18px; 
+    }
+
+    .logo h1 {
+        font-size: .7rem;
+    }
+
+    span.material-symbols-outlined {
+        font-size: 18px;
+        margin: 0px 5px;
+    }
+}
+
+/* 285PX WIDTH SETTINGS */
+
+@media screen and (max-width: 285px) {
+    .hamburguer-menu {
+        display: flex;
+        width: 30px;
+        height: 30px;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .favicon {
+        width: 16px; height: 16px; 
+    }
+
+    .logo h1 {
+        font-size: .7rem;
+    }
+
+    span.material-symbols-outlined {
+        font-size: 16px;
+        margin: 0px 3px;
+    }
+}
