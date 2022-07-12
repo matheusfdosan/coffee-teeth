@@ -161,15 +161,15 @@ nav {
     }
 
     .favicon {
-        width: 25px; height: 25px; 
+        width: 27px; height: 27px; 
     }
 
     .logo h1 {
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
 
     span.material-symbols-outlined {
-        font-size: 25px;
+        font-size: 27px;
         margin: 0px 9px;
     }
 }
@@ -186,15 +186,15 @@ nav {
     }
 
     .favicon {
-        width: 20px; height: 20px; 
+        width: 25px; height: 25px; 
     }
 
     .logo h1 {
-        font-size: .8rem;
+        font-size: 1.1rem;
     }
 
     span.material-symbols-outlined {
-        font-size: 20px;
+        font-size: 25px;
         margin: 0px 9px;
     }
 }
@@ -211,16 +211,16 @@ nav {
     }
 
     .favicon {
-        width: 20px; height: 20px; 
+        width: 23px; height: 23px; 
     }
 
     .logo h1 {
-        font-size: .8rem;
+        font-size: 1rem;
     }
 
     span.material-symbols-outlined {
-        font-size: 20px;
-        margin: 0px 9px;
+        font-size: 23px;
+        margin: 0px 8px;
     }
 }
 
@@ -236,16 +236,16 @@ nav {
     }
 
     .favicon {
-        width: 20px; height: 20px; 
+        width: 23px; height: 23px; 
     }
 
     .logo h1 {
-        font-size: .8rem;
+        font-size: 1rem;
     }
 
     span.material-symbols-outlined {
-        font-size: 20px;
-        margin: 0px 9px;
+        font-size: 23px;
+        margin: 0px 6px;
     }
 }
 
@@ -261,15 +261,15 @@ nav {
     }
 
     .favicon {
-        width: 18px; height: 18px; 
+        width: 20px; height: 20px; 
     }
 
     .logo h1 {
-        font-size: .7rem;
+        font-size: .9rem;
     }
 
     .material-symbols-outlined {
-        font-size: 18px;
+        font-size: 20px;
         margin: 0px 5px;
     }
 }
@@ -286,15 +286,15 @@ nav {
     }
 
     .favicon {
-        width: 18px; height: 18px; 
+        width: 19px; height: 19px; 
     }
 
     .logo h1 {
-        font-size: .7rem;
+        font-size: .9rem;
     }
 
     span.material-symbols-outlined {
-        font-size: 18px;
+        font-size: 19px;
         margin: 0px 5px;
     }
 }
@@ -311,15 +311,15 @@ nav {
     }
 
     .favicon {
-        width: 16px; height: 16px; 
+        width: 18px; height: 18px; 
     }
 
     .logo h1 {
-        font-size: .7rem;
+        font-size: .8rem;
     }
 
     span.material-symbols-outlined {
-        font-size: 16px;
+        font-size: 18px;
         margin: 0px 3px;
     }
 }
