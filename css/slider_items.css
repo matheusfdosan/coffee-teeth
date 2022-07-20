@@ -8,6 +8,11 @@
     justify-content: space-between;
 }
 
+.arrows {
+    width: 44px;
+    margin: 0px 37px;
+}
+
 .fig-items {
     display: flex;
     flex-direction: row;
@@ -47,6 +52,11 @@
     .fig-content figcaption {
         font-size: .9rem;
     }
+    
+    .arrows {
+        width: 30px;
+    }
+
 }
 
 /* 520PX WIDTH SETTINGS */
@@ -54,6 +64,10 @@
 @media screen and (max-width: 520px) {
     .fig-content figcaption {
         font-size: .8rem;
+    }
+
+    .arrows {
+        width: 27px;
     }
 }
 
@@ -63,6 +77,10 @@
     .fig-content figcaption {
         font-size: .8rem;
     }
+
+    .arrows {
+        width: 25px;
+    }
 }
 
 /* 400PX WIDTH SETTINGS */
@@ -70,6 +88,10 @@
 @media screen and (max-width: 400px) {
     .fig-content figcaption {
         font-size: .7rem;
+    }
+
+    .arrows {
+        width: 23px;
     }
 }
 
@@ -79,6 +101,18 @@
     .fig-content figcaption {
         font-size: .7rem;
     }
+
+    .arrows {
+        width: 23px;
+    }
+}
+
+/* 360PX WIDTH SETTINGS */
+
+@media screen and (max-width: 360px) {
+    .arrows {
+        width: 20px;
+    }
 }
 
 /* 320PX WIDTH SETTINGS */
@@ -87,6 +121,10 @@
     .fig-content figcaption {
         font-size: .6rem;
     }
+    
+    .arrows {
+        width: 19px;
+    }
 }
 
 /* 285PX WIDTH SETTINGS */
@@ -94,5 +132,15 @@
 @media screen and (max-width: 285px) {
     .fig-content figcaption {
         font-size: .6rem;
+    }
+
+    .arrows {
+        width: 17px;
+    }
+}
+
+@media screen and (max-width: 226px) {
+    .arrows {
+        display: none;
     }
 }

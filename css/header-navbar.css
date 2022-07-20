@@ -8,15 +8,6 @@
     padding: 4px;
 }
 
-span.material-symbols-outlined {
-    font-size: 40px;
-    margin: 0px 10px;
-}
-
-span.material-symbols-outlined:hover {
-    cursor: pointer;
-}
-
 .logo {
     display: flex;
     flex-direction: row;
@@ -36,14 +27,22 @@ h1 {
     font-family: 'Montserrat', sans-serif;
 }
 
-nav {
+.utility-items {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Helvetica, Arial, sans-serif;
-    flex-direction: column;
-    align-content: flex-start;
+    flex-direction: row;
     flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+}
+
+.items-header {
+    width: 35px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.nav-list img {
+    margin-left: 5px;
 }
 
 /* RESPONSIVE NAVIGATION CSS */
@@ -65,9 +64,9 @@ nav {
     }
 
     .nav-list li {
-        margin: 3px 15px;
+        margin: 9px 15px;
+        font-family: 'Montserrat', sans-serif;
         opacity: 0;
-        margin-top: 10px;
         display: flex;
         list-style: none;
         flex-direction: row;
@@ -118,8 +117,8 @@ nav {
         width: 35px; height: 35px; 
     }
 
-    span.material-symbols-outlined {
-        font-size: 35px;
+    .items-header {
+        width: 35px;
         margin: 0px 10px;
     }
 }
@@ -143,8 +142,8 @@ nav {
         font-size: 1.3rem;
     }
 
-    span.material-symbols-outlined {
-        font-size: 30px;
+    .items-header {
+        width: 30px;
         margin: 0px 10px;
     }
 }
@@ -168,9 +167,17 @@ nav {
         font-size: 1.3rem;
     }
 
-    span.material-symbols-outlined {
-        font-size: 27px;
+    .items-header {
+        width: 27px;
         margin: 0px 9px;
+    }
+
+    .nav-list li {
+        font-size: 13px;
+    }
+
+    .nav-list img {
+        width: 35px;
     }
 }
 
@@ -193,8 +200,8 @@ nav {
         font-size: 1.1rem;
     }
 
-    span.material-symbols-outlined {
-        font-size: 25px;
+    .items-header {
+        width: 25px;
         margin: 0px 9px;
     }
 }
@@ -218,9 +225,17 @@ nav {
         font-size: 1rem;
     }
 
-    span.material-symbols-outlined {
-        font-size: 23px;
+    .items-header {
+        width: 23px;
         margin: 0px 8px;
+    }
+
+    .nav-list li {
+        font-size: 9px;
+    }
+
+    .nav-list img {
+        width: 30px;
     }
 }
 
@@ -243,8 +258,8 @@ nav {
         font-size: 1rem;
     }
 
-    span.material-symbols-outlined {
-        font-size: 23px;
+    .items-header {
+        width: 23px;
         margin: 0px 6px;
     }
 }
@@ -268,8 +283,8 @@ nav {
         font-size: .9rem;
     }
 
-    .material-symbols-outlined {
-        font-size: 20px;
+    .items-header {
+        width: 20px;
         margin: 0px 5px;
     }
 }
@@ -293,8 +308,8 @@ nav {
         font-size: .9rem;
     }
 
-    span.material-symbols-outlined {
-        font-size: 19px;
+    .items-header {
+        width: 19px;
         margin: 0px 5px;
     }
 }
@@ -318,8 +333,8 @@ nav {
         font-size: .8rem;
     }
 
-    span.material-symbols-outlined {
-        font-size: 18px;
+    .items-header {
+        width: 18px;
         margin: 0px 3px;
     }
 }

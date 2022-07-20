@@ -31,6 +31,8 @@
     align-items: stretch;
     flex-direction: row;
     flex-wrap: nowrap;
+    border-bottom: 3px solid #000;
+    border-radius: 12px;
 }
 
 .we-work-words {
