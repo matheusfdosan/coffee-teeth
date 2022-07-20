@@ -30,7 +30,7 @@ h1 {
 .utility-items {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-content: center;
     align-items: center;
 }
