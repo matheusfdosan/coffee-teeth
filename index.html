@@ -15,6 +15,8 @@
         <link rel="stylesheet" href="css/slider_items.css">
         <link rel="stylesheet" href="css/community.css">
         <link rel="stylesheet" href="css/footer.css">
+
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         
 
         <title>Coffee Teeth</title>
@@ -104,46 +106,38 @@
 
             <!-- STORE ITEMS -->
             <div class="items">
-
                 <img src="assets/left-arrow.svg" alt="" class="arrows">
-
                 <div class="fig-items">
                     <figure class="fig-content">
                         <img src="img/coffee-bags/coffee-bag-clean.jpeg" alt="coffee-bag-clean">
                         <figcaption>Coffee Classic <br>Price: $2.50</figcaption>
                     </figure>
-                    
                     <figure class="fig-content">
                         <img src="img/coffee-bags/coffee-bag-clean.jpeg" alt="coffee-bag-clean">
                         <figcaption>Coffee Classic <br>Price: $2.50</figcaption>
                     </figure>
-
                     <figure class="fig-content">
                         <img src="img/coffee-bags/coffee-bag-clean.jpeg" alt="coffee-bag-clean">
                         <figcaption>Coffee Classic <br>Price: $2.50</figcaption>
                     </figure>
-
                     <figure class="fig-content">
                         <img src="img/coffee-bags/coffee-bag-clean.jpeg" alt="coffee-bag-clean">
                         <figcaption>Coffee Classic <br>Price: $2.50</figcaption>
                     </figure>
-
                     <figure class="fig-content">
                         <img src="img/coffee-bags/coffee-bag-clean.jpeg" alt="coffee-bag-clean">
                         <figcaption>Coffee Classic <br>Price: $2.50</figcaption>
                     </figure>
                 </div>
-
                 <img src="assets/right-arrow.svg" alt="" class="arrows">
-
             </div>
-            
+
             <!-- COMMUNITY -->
             <div class="community">
                 <h2>Community</h2>
 
                 <!-- COMMUNITY POSTS -->
-                <div class="commun-post">
+                <div class="commun-post" data-aos="fade-left" data-aos-duration="1000">
                     <figure>
                         <img src="https://images.pexels.com/photos/7333831/pexels-photo-7333831.jpeg?auto=compress&cs=tinysrgb&h=566.525&fit=crop&w=633.175&dpr=1" alt="">
                         <figcaption>
@@ -165,7 +159,7 @@
                         </figcaption>
                     </figure>
                 </div>
-                <div class="load-more">
+                <div class="load-more" data-aos="zoom-in">
                     <button>Load More</button>
                 </div>
             </div>
@@ -200,5 +194,7 @@
 
         <script src="js/slider.js"></script>
         <script src="js/navbar.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>AOS.init();</script>
     </body>
 </html>

@@ -26,3 +26,7 @@
     --color-font-gray-dark-2: #3A3A3A;
     --color-font-link-blue: #324A9F;
 }
+
+body {
+    overflow-x: hidden
+}
