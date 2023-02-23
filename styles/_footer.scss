@@ -1,0 +1,41 @@
+footer {
+  width: 100%;
+  background: $white;
+  border-top: 1px solid $black;
+
+  div.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    width: 90%;
+    max-width: 980px;
+    margin: auto;
+
+    padding: 25px 0;
+
+    div.links {
+      display: flex;
+      gap: 3rem;
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        li.categories {
+          font-size: 2rem;
+          font-weight: bold;
+        }
+
+        li.link {
+          opacity: 0.8;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

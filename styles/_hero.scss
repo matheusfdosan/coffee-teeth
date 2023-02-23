@@ -1,0 +1,54 @@
+div.hero {
+  display: flex;
+  align-items: center;
+
+  position: relative;
+
+  width: 90%;
+  max-width: 980px;
+  height: 580px;
+
+  margin: auto;
+  margin-top: 80px;
+
+  div.hero-image {
+    width: 88.5rem;
+    max-width: 885px;
+    height: 400px;
+
+    background-image: url("../imgs/hero-image.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    box-shadow: $shadow2;
+
+    border-radius: 10px;
+
+    position: absolute;
+    top: 7.1rem;
+    right: -36.2rem;
+    z-index: 1;
+  }
+
+  div.hero-info {
+    position: absolute;
+    z-index: 2;
+
+    h2 {
+      font-size: 5rem;
+      width: 560px;
+
+      span {
+        animation: rainbow 2s infinite linear alternate;
+      }
+    }
+
+    p {
+      font-size: 1.7rem;
+      width: 391px;
+      margin-top: 15px;
+      opacity: 0.7;
+    }
+  }
+}

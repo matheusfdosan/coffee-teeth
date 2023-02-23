@@ -1,0 +1,96 @@
+div.some-recipes {
+  height: fit-content;
+  margin: 50px 0;
+
+  div.container {
+    width: 90%;
+    max-width: 980px;
+    margin: auto;
+
+    div.header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      h2 {
+        font-size: 3.4rem;
+
+        span {
+          display: block;
+
+          &:last-child {
+            color: #4b32c1;
+          }
+        }
+      }
+
+      a:hover {
+        opacity: 0.8;
+      }
+    }
+
+    div.recipes-wrapper {
+      display: grid;
+      align-items: center;
+      gap: 1.5rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-gap: 20px;
+      margin-top: 50px;
+
+      div.card-recipe {
+        position: relative;
+        cursor: pointer;
+
+        user-select: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+
+        transition: transform 0.3s ease-out;
+
+        &:hover {
+          transform: scale(1.05);
+
+          .arrow {
+            opacity: 1;
+          }
+        }
+
+        img {
+          width: 100%;
+          height: 18rem;
+          object-fit: cover;
+          border-radius: 10px;
+        }
+
+        div.arrow {
+          position: absolute;
+          right: 25px;
+          bottom: 25px;
+          opacity: 0.75;
+          transition: opacity 0.3s ease-out;
+
+          img {
+            border-radius: 50%;
+            background: #414044;
+            width: 50px;
+            height: 50px;
+          }
+        }
+
+        h3 {
+          font-size: 1.8rem;
+          font-weight: 500;
+          display: -webkit-box;
+          -webkit-line-clamp: 1;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          opacity: 0.8;
+          height: 100%;
+          word-break: keep-all;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,66 @@
+$primary-color: #f7f7f7;
+$secondary-color: #efece8;
+$white: #fff;
+$black: #121212;
+
+$shadow: 0 4px 6px -1px hwb(0 0% 100% / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+$shadow2: 0px 43px 38px -32px #b5b6b8;
+
+$sora: "Sora", sans-serif;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-family: $sora;
+  color: $black;
+
+  ul,
+  li {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  background: $primary-color;
+  height: 100vh;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+  height: 100%;
+}
+
+body {
+  font-size: 1.6rem;
+  overflow-x: hidden;
+}
+
+@keyframes rainbow {
+  0% {
+    color: #4b32c1;
+  }
+  25% {
+    color: #b936c8;
+  }
+  50% {
+    color: #f15066;
+  }
+  75% {
+    color: #efe107;
+  }
+  100% {
+    color: #18c356;
+  }
+}
+
