@@ -5,7 +5,7 @@
 
     div.hero-info {
       position: static;
-      text-align: center;
+      padding: 10px;
 
       h2 {
         text-align: left;
@@ -15,12 +15,13 @@
       p {
         margin: 20px 0;
         text-align: left;
+        width: auto;
       }
     }
 
     div.hero-image {
       position: static;
-      width: 100%;
+      width: 90%;
       margin-bottom: 20px;
       height: 300rem;
     }
@@ -119,11 +120,17 @@
   }
 }
 
+@media (max-width: 660px) {
+  div.hero div.hero-image {
+    width: 100%;
+  }
+}
+
 @media (max-width: 515px) {
   footer div.container {
     flex-direction: column;
     gap: 3rem;
-    
+
     a {
       text-align: center;
       width: 100%;
@@ -139,6 +146,6 @@
 
 @media (max-width: 460px) {
   html {
-    font-size: 53%;
+    font-size: 52%;
   }
 }

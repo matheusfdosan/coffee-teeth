@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../styles/main.css" />
+
+    <title>Coffee Teeth - Products</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="../index.html">
+            <img src="../imgs/logo.svg" alt="logo" />
+          </a>
+        </div>
+
+        <div class="menu-section">
+          <nav>
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="./products.html">Products</a></li>
+              <li><a href="./recipes.html">Recipes</a></li>
+              <li><a href="./about.html">About</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="utility-menu">
+          <ul>
+            <li>
+              <a href="./login.html">
+                <img src="../imgs/user.svg" alt="user-account" />
+              </a>
+            </li>
+          </ul>
+
+          <div class="menu-toggle">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="our-products">
+      <div class="search">
+        <img src="../imgs/search.svg" alt="search" />
+        <input type="text" spellcheck="true" placeholder="Search the menu" />
+        <div class="cross">
+          <img src="../imgs/cross.svg" alt="Clear search" />
+        </div>
+      </div>
+
+      <section id="accompaniments">
+        <h3>Accompaniments</h3>
+
+        <div class="accompaniments-container"></div>
+      </section>
+
+      <section id="our-coffees">
+        <h3>Our Coffees</h3>
+
+        <div class="drinks-container"></div>
+      </section>
+    </div>
+
+    <footer>
+      <div class="container">
+        <a href="../index.html">
+          <img src="../imgs/logo.svg" alt="logo" />
+        </a>
+
+        <div class="links">
+          <ul class="contact-links">
+            <li class="categories">Contact</li>
+            <li class="link">
+              <a href="https://instagram.com/matheusfdosan" target="_blank"
+                >Instagram</a
+              >
+            </li>
+            <li class="link">
+              <a href="https://github.com/matheusfdosan" target="_blank"
+                >Github</a
+              >
+            </li>
+          </ul>
+          <ul class="support-links">
+            <li class="categories">Support</li>
+            <li class="link"><a href="">FAQ</a></li>
+            <li class="link"><a href="">Support Center</a></li>
+            <li class="link"><a href="">Feedback</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../scripts/header.js"></script>
+    <script src="../scripts/menu-toggle.js"></script>
+    <script src="../scripts/search-input-configs.js"></script>
+    <script src="../scripts/accompaniments-cards.js"></script>
+    <script src="../scripts/drinks.js"></script>
+  </body>
+</html>

@@ -34,18 +34,18 @@ div.hero {
   div.hero-info {
     position: absolute;
     z-index: 2;
-
+    
     h2 {
-      font-size: 5rem;
+      font-size: 4rem;
       width: 560px;
-
+      
       span {
         animation: rainbow 2s infinite linear alternate;
       }
     }
 
     p {
-      font-size: 1.7rem;
+      font-size: 1.6rem;
       width: 391px;
       margin-top: 15px;
       opacity: 0.7;
