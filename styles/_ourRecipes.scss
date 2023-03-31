@@ -72,6 +72,7 @@
 
           .arrow {
             opacity: 1;
+            transform: rotate(45deg);
           }
         }
 
@@ -87,7 +88,7 @@
           right: 25px;
           bottom: 25px;
           opacity: 0.75;
-          transition: opacity 0.3s ease-out;
+          transition: all 0.3s ease-out;
 
           img {
             border-radius: 50%;
@@ -106,7 +107,6 @@
           overflow: hidden;
           text-overflow: ellipsis;
           opacity: 0.8;
-          height: 100%;
           word-break: keep-all;
         }
       }

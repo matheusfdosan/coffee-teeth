@@ -169,8 +169,20 @@ const data = [
   },
   {
     section: ["recipe"],
-    img: "",
-    name: "",
+    img: "imgs//make-a-iced-coffee.jpg",
+    name: "Iced coffee",
+    price: null,
+  },
+  {
+    section: ["recipe"],
+    img: "imgs//make-a-caramel-macchiato.jpg",
+    name: "Caramel macchiato",
+    price: null,
+  },
+  {
+    section: ["recipe"],
+    img: "imgs//make-a-creamy-coffee.jpg",
+    name: "How to make a creamy coffee",
     price: null,
   },
 ];
