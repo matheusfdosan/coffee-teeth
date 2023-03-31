@@ -53,6 +53,7 @@ div.some-recipes {
 
           .arrow {
             opacity: 1;
+            transform: rotate(45deg);
           }
         }
 
@@ -68,7 +69,7 @@ div.some-recipes {
           right: 25px;
           bottom: 25px;
           opacity: 0.75;
-          transition: opacity 0.3s ease-out;
+          transition:  0.3s ease-out;
 
           img {
             border-radius: 50%;
