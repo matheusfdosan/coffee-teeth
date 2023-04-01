@@ -36,14 +36,18 @@
   header nav {
     display: none;
   }
+  
+  header div.utility-menu {
+    display: flex;
+  }
 
   div.one,
   div.two,
   div.three {
     background: $black;
-    height: 4px;
+    height: 2px;
     width: 100%;
-    margin: 6px auto;
+    margin: 8px auto;
     border-radius: 10px;
     transition-duration: 0.5s;
   }
