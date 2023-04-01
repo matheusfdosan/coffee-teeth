@@ -14,12 +14,12 @@ form.onsubmit = (event) => {
     email.value.length === 0 ||
     message.value.length === 0
   ) {
-    inputMessages.style.display = "inline";
+    inputMessages.style.display = "block";
     inputMessages.style.background = "#cd3434";
 
     inputMessages.innerHTML = "Fill in all the blanks";
   } else {
-    inputMessages.style.display = "inline";
+    inputMessages.style.display = "block";
     inputMessages.style.background = "#5fcd34";
     inputMessages.innerHTML = "Message sent successfully!";
     form.reset();

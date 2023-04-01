@@ -33,6 +33,7 @@
     a {
       display: block;
       width: fit-content;
+      word-break: keep-all;
       margin-top: 20px;
       padding: 10px 20px;
       border-radius: 5px;
@@ -87,11 +88,12 @@
     }
 
     .input-messages {
+      display: none;
       font-size: 1.6rem;
       padding: 10px;
       border-radius: 5px;
       width: fit-content;
-      margin: 20px 10px;
+      margin: 10px 0;
     }
 
     input[type="submit"] {
