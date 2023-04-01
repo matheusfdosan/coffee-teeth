@@ -14,7 +14,7 @@
 
     <link rel="stylesheet" href="../styles/main.css" />
 
-    <title>Coffee Teeth - Recipes</title>
+    <title>Coffee Teeth - About</title>
   </head>
   <body>
     <header>
@@ -46,23 +46,62 @@
       </div>
     </header>
 
-    <div class="our-recipes">
-      <h2>
-        <span>See</span>
-        <span>All</span>
-        <span>Recipes</span>
-      </h2>
+    <div class="about-container">
+      <section class="initial-presentation">
+        <h2>Hi, there 👋</h2>
+        <h3>About</h3>
+        <p>
+          This is a blog of a fictional coffee shop invented by me
+          <a href="https://github.com/matheusfdosan" target="_blank"
+            >Matheus Faustino</a
+          >, that is, it <strong>has no real commercial relationship</strong>.
+          This site aims to present products and recipes made by the store.
+        </p>
+      </section>
 
-      <div class="search">
-        <img src="../assets/search.svg" alt="search" />
-        <input type="text" spellcheck="true" placeholder="Search recipes" />
-        <div class="cross">
-          <img src="../assets/cross.svg" alt="Clear search" />
+      <section class="main-presentation">
+        <div class="text">
+          <h3>The Store</h3>
+          <p>
+            We have several types of coffees that cater to the taste of the
+            public, we also have different types of accompaniments, such as
+            cakes, snacks and sweets.
+          </p>
+
+          <a href="products.html">See All</a>
         </div>
-      </div>
+      </section>
 
-      <section class="all-recipes">
-        <div class="recipes-container"></div>
+      <section class="address-info">
+        <h3>Address Info</h3>
+        <address>Street goes up down, 124, Colorado.</address>
+        <p>Contact: 044 1234-5678</p>
+      </section>
+
+      <section class="final-presentation">
+        <div class="contact">
+          <h2>Contact</h2>
+          <div class="form-contact">
+            <form method="post">
+              <input
+                type="text"
+                class="user-name"
+                placeholder="Enter your name"
+              />
+              <input
+                type="email"
+                class="email"
+                placeholder="Enter a valid email address"
+              />
+              <textarea
+                class="textarea"
+                placeholder="Enter yor message"
+              ></textarea>
+              <input type="submit" value="Send" />
+              <span class="input-messages"></span>
+            </form>
+          </div>
+        </div>
       </section>
     </div>
 
@@ -98,7 +137,7 @@
 
     <script src="../scripts/header.js"></script>
     <script src="../scripts/menuToggle.js"></script>
-    <script src="../scripts/searchInputConfigs.js"></script>
+    <script src="../scripts/form.js"></script>
     <script src="../scripts/database.js"></script>
   </body>
 </html>
