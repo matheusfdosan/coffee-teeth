@@ -71,13 +71,14 @@ div.some-recipes {
           bottom: 25px;
           opacity: 0.75;
           transition: 0.3s ease-out;
-
-          img {
-            border-radius: 50%;
-            background: #414044;
-            width: 50px;
-            height: 50px;
-          }
+          background: #414044;
+          border-radius: 50%;
+          width: 50px;
+          height: 50px;
+          background-image: url(../assets/slanted-arrow.svg);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
         }
 
         h3 {

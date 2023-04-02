@@ -130,6 +130,18 @@
   }
 }
 
+@media (max-width: 500px) {
+  .modal-overlay.active {
+    padding: 0;
+    background: #fff;
+
+    .modal .modal-content img {
+      width: 100%;
+      border-radius: 0;
+    }
+  }
+}
+
 @media (max-width: 515px) {
   footer div.container {
     flex-direction: column;
@@ -151,5 +163,19 @@
 @media (max-width: 460px) {
   html {
     font-size: 52%;
+  }
+}
+
+@media (max-width: 280px) {
+  .modal-overlay.active {
+    padding: 0;
+    background: #fff;
+
+    .modal .modal-content img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      border-radius: 0;
+    }
   }
 }
