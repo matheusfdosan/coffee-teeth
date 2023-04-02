@@ -250,7 +250,7 @@ data.forEach(({ section, img, name, price, description }) => {
   if (drinksSection) {
     const container = document.querySelector(".drinks-container");
     const card = `
-    <div class="drink-card" data-img="${img}" data-name="${name}" data-price="${price}" data-description="${description}">
+    <div class="drink-card" data-img="../${img}" data-name="${name}" data-price="${price}" data-description="${description}">
       <img src="../${img}" alt="${name} Image">
       <div class="info">
         <h3>${price} - ${name}</h3>
@@ -261,7 +261,7 @@ data.forEach(({ section, img, name, price, description }) => {
   } else if (foodsSection) {
     const container = document.querySelector(".foods-container");
     const card = `
-    <div class="food-card" data-img="${img}" data-name="${name}" data-price="${price}" data-description="${description}">
+    <div class="food-card" data-img="../${img}" data-name="${name}" data-price="${price}" data-description="${description}">
       <img src="../${img}" alt="${name} Image">
       <div class="info">
         <h3>${price} - ${name}</h3>
@@ -272,7 +272,7 @@ data.forEach(({ section, img, name, price, description }) => {
   } else if (recipeSection) {
     const container = document.querySelector("div.recipes-container");
     const card = `
-    <div class="card-recipe" data-img="${img}" data-name="${name}" data-price="${price}" data-description="${description}">
+    <div class="card-recipe" data-img="../${img}" data-name="${name}" data-price="${price}" data-description="${description}">
       <img src="../${img}" alt="thumbnail">
       <div class="arrow"></div>
       <h3>${name}</h3>
