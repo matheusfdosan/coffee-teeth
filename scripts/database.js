@@ -215,106 +215,112 @@ const data = [
     description:
       "<section class='description'>Ingredients:<br>&bull; 1 cup brewed coffee<br>&bull; 2 tablespoons heavy cream<br>&bull; 1 teaspoon sugar (optional)<br>&bull; Whipped cream for topping (optional)<br><br>Instructions:<br><br>1. Brew a cup of coffee using your preferred method.<br>2. In a small saucepan, heat the heavy cream over medium heat until it begins to simmer.<br>3. Remove the cream from heat and whisk vigorously until it becomes thick and frothy.<br>4. If desired, add sugar to the cream and continue whisking until fully incorporated.<br>5. Pour the hot coffee into a mug.<br>6. Gently pour the frothy cream over the coffee, starting in the center and moving outward.<br>7. Top with whipped cream, if desired.<br>8. Enjoy your creamy coffee!<br></section>",
   },
-];
+]
 
 data.forEach(({ section, img, name, price, description }) => {
-  const drinksSection = section[0] === "drink";
-  const foodsSection = section[0] === "food";
-  const recipeSection = section[0] === "recipe";
-  const trendingDrinks = section[0] === "drink" && section[1] === "trending";
-  const trendingRecipes = section[0] === "recipe" && section[1] === "trending";
+  const drinksSection = section[0] === "drink"
+  const foodsSection = section[0] === "food"
+  const recipeSection = section[0] === "recipe"
+  const trendingDrinks = section[0] === "drink" && section[1] === "trending"
+  const trendingRecipes = section[0] === "recipe" && section[1] === "trending"
 
   if (trendingDrinks) {
     const container = document.querySelector(
       ".trending-coffees > .container > .cards-wrapper"
-    );
+    )
     const card = `
     <div class="card-coffee" data-img="${img}" data-name="${name}" data-price="${price}" data-description="${description}">
       <img src="${img}" alt="${name}" />
-      <div class="info">${name} - ${price}</div>
-    </div>`;
+      <div class="info">
+        <h3>${name} - ${price}</h3>
+      </div>
+    </div>`
 
-    container ? ((container.innerHTML += card), showModal(container)) : "";
+    container ? ((container.innerHTML += card), showModal(container)) : ""
   } else if (trendingRecipes) {
-    const container = document.querySelector("div.recipes-wrapper");
+    const container = document.querySelector("div.recipes-wrapper")
     const card = `
     <div class="card-recipe" data-img="${img}" data-name="${name}" data-price="${price}" data-description="${description}">
       <img src="${img}" alt="thumbnail">
       <div class="arrow"></div>
       <h3>${name}</h3>
-    </div>`;
+    </div>`
 
-    container ? ((container.innerHTML += card), showModal(container)) : "";
+    container ? ((container.innerHTML += card), showModal(container)) : ""
   }
 
   if (drinksSection) {
-    const container = document.querySelector(".drinks-container");
+    const container = document.querySelector(".drinks-container")
     const card = `
     <div class="drink-card" data-img="../${img}" data-name="${name}" data-price="${price}" data-description="${description}">
       <img src="../${img}" alt="${name} Image">
       <div class="info">
         <h3>${price} - ${name}</h3>
       </div>
-    </div>`;
+    </div>`
 
-    container ? ((container.innerHTML += card), showModal(container)) : "";
+    container ? ((container.innerHTML += card), showModal(container)) : ""
   } else if (foodsSection) {
-    const container = document.querySelector(".foods-container");
+    const container = document.querySelector(".foods-container")
     const card = `
     <div class="food-card" data-img="../${img}" data-name="${name}" data-price="${price}" data-description="${description}">
       <img src="../${img}" alt="${name} Image">
       <div class="info">
         <h3>${price} - ${name}</h3>
       </div>
-    </div>`;
+    </div>`
 
-    container ? ((container.innerHTML += card), showModal(container)) : "";
+    container ? ((container.innerHTML += card), showModal(container)) : ""
   } else if (recipeSection) {
-    const container = document.querySelector("div.recipes-container");
+    const container = document.querySelector("div.recipes-container")
     const card = `
     <div class="card-recipe" data-img="../${img}" data-name="${name}" data-price="${price}" data-description="${description}">
       <img src="../${img}" alt="thumbnail">
       <div class="arrow"></div>
       <h3>${name}</h3>
-    </div>`;
+    </div>`
 
-    container ? ((container.innerHTML += card), showModal(container)) : "";
+    container ? ((container.innerHTML += card), showModal(container)) : ""
   }
-});
+})
 
 function showModal(container) {
-  const modalOverlay = document.querySelector(".modal-overlay");
+  const modalOverlay = document.querySelector(".modal-overlay")
 
   container.addEventListener("click", (event) => {
     if (event.srcElement.classList[1] === "card-container") {
     } else {
-      modalOverlay.classList.add("active");
-      document.body.style.overflowY = "hidden";
+      modalOverlay.classList.add("active")
+      document.body.style.overflowY = "hidden"
 
-      let img;
-      let name;
-      let price;
-      let description;
+      let img
+      let name
+      let price
+      let description
 
       if (event.target.offsetParent === "div.arrow") {
-        img = event.target.offsetParent.offsetParent.dataset.img;
-        name = event.target.offsetParent.offsetParent.dataset.name;
-        price = event.target.offsetParent.offsetParent.dataset.price;
-        description =
-          event.target.offsetParent.offsetParent.dataset.description;
+        img = event.target.offsetParent.offsetParent.dataset.img
+        name = event.target.offsetParent.offsetParent.dataset.name
+        price = event.target.offsetParent.offsetParent.dataset.price
+        description = event.target.offsetParent.offsetParent.dataset.description
+      } else if (event.target.nodeName === "H3") {
+        img = event.target.offsetParent.offsetParent.dataset.img
+        name = event.target.offsetParent.offsetParent.dataset.name
+        price = event.target.offsetParent.offsetParent.dataset.price
+        description = event.target.offsetParent.offsetParent.dataset.description
       } else {
-        img = event.target.offsetParent.dataset.img;
-        name = event.target.offsetParent.dataset.name;
-        price = event.target.offsetParent.dataset.price;
-        description = event.target.offsetParent.dataset.description;
+        img = event.target.offsetParent.dataset.img
+        name = event.target.offsetParent.dataset.name
+        price = event.target.offsetParent.dataset.price
+        description = event.target.offsetParent.dataset.description
       }
 
       document
         .querySelector(".close-modal > img")
         .addEventListener("click", () => {
-          modalOverlay.classList.remove("active");
-          document.body.style.overflowY = "initial";
-        });
+          modalOverlay.classList.remove("active")
+          document.body.style.overflowY = "initial"
+        })
 
       document.querySelector(
         ".modal-overlay > .modal > .modal-container"
@@ -327,7 +333,7 @@ function showModal(container) {
         </div>
         ${description}
       </div>
-    `;
+    `
     }
-  });
+  })
 }
