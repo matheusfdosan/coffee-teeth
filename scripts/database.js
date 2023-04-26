@@ -1,3 +1,5 @@
+"use strict"
+
 const data = [
   {
     section: ["drink", "trending"],
@@ -231,9 +233,7 @@ data.forEach(({ section, img, name, price, description }) => {
     const card = `
     <div class="card-coffee" data-img="${img}" data-name="${name}" data-price="${price}" data-description="${description}">
       <img src="${img}" alt="${name}" />
-      <div class="info">
-        <h3>${name} - ${price}</h3>
-      </div>
+      <h3>${name} - ${price}</h3>
     </div>`
 
     container ? ((container.innerHTML += card), showModal(container)) : ""
@@ -287,8 +287,8 @@ data.forEach(({ section, img, name, price, description }) => {
 function showModal(container) {
   const modalOverlay = document.querySelector(".modal-overlay")
 
-  container.addEventListener("click", (event) => {
-    if (event.srcElement.classList[1] === "card-container") {
+  container.addEventListener("click", ({ target, srcElement }) => {
+    if (srcElement.classList[1] === "card-container") {
     } else {
       modalOverlay.classList.add("active")
       document.body.style.overflowY = "hidden"
@@ -298,21 +298,21 @@ function showModal(container) {
       let price
       let description
 
-      if (event.target.offsetParent === "div.arrow") {
-        img = event.target.offsetParent.offsetParent.dataset.img
-        name = event.target.offsetParent.offsetParent.dataset.name
-        price = event.target.offsetParent.offsetParent.dataset.price
-        description = event.target.offsetParent.offsetParent.dataset.description
-      } else if (event.target.nodeName === "H3") {
-        img = event.target.offsetParent.offsetParent.dataset.img
-        name = event.target.offsetParent.offsetParent.dataset.name
-        price = event.target.offsetParent.offsetParent.dataset.price
-        description = event.target.offsetParent.offsetParent.dataset.description
+      if (target.offsetParent === "div.arrow") {
+        img = target.offsetParent.offsetParent.dataset.img
+        name = target.offsetParent.offsetParent.dataset.name
+        price = target.offsetParent.offsetParent.dataset.price
+        description = target.offsetParent.offsetParent.dataset.description
+      } else if (target === "h3") {
+        img = target.offsetParent.offsetParent.dataset.img
+        name = target.offsetParent.offsetParent.dataset.name
+        price = target.offsetParent.offsetParent.dataset.price
+        description = target.offsetParent.offsetParent.dataset.description
       } else {
-        img = event.target.offsetParent.dataset.img
-        name = event.target.offsetParent.dataset.name
-        price = event.target.offsetParent.dataset.price
-        description = event.target.offsetParent.dataset.description
+        img = target.offsetParent.dataset.img
+        name = target.offsetParent.dataset.name
+        price = target.offsetParent.dataset.price
+        description = target.offsetParent.dataset.description
       }
 
       document

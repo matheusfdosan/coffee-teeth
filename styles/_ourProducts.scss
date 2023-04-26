@@ -9,7 +9,7 @@ div.our-products {
 
     span:nth-child(2) {
       color: #18c356;
-    } 
+    }
   }
 
   div.search {
@@ -69,10 +69,6 @@ div.our-products {
 
         &:hover {
           transform: scale(1.05);
-
-          div.info h3 {
-            opacity: 1;
-          }
         }
 
         img {
@@ -83,26 +79,17 @@ div.our-products {
           border-radius: 10px;
         }
 
-        div.info {
-          position: absolute;
-          bottom: -10px;
-          left: 10px;
-          background: $white;
-          padding: 5px;
-          border-radius: 10px;
-
-          h3 {
-            font-size: 1.8rem;
-            font-weight: 500;
-            display: -webkit-box;
-            -webkit-line-clamp: 1;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            opacity: 0.8;
-            height: 100%;
-            word-break: keep-all;
-          }
+        h3 {
+          font-size: 1.8rem;
+          font-weight: 500;
+          display: -webkit-box;
+          -webkit-line-clamp: 1;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          opacity: 0.8;
+          height: 100%;
+          word-break: keep-all;
         }
       }
     }
