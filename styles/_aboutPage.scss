@@ -1,6 +1,6 @@
 .about-container {
-  width: 90%;
-  max-width: 980px;
+  @include width();
+  
   font-size: 3.4rem;
   margin: 120px auto;
 
@@ -64,49 +64,18 @@
   }
 
   .final-presentation {
-    background: #222020;
-    padding: 20px;
-    border-radius: 10px;
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      
+      li a {
+        color: #4b32c1;
+        font-size: 26px;
 
-    * {
-      color: #fff;
-    }
-
-    .form-contact form input:not(input[type="submit"]),
-    textarea {
-      display: block;
-      width: 100%;
-      color: #000;
-      padding: 10px;
-      margin: 10px 0;
-      border: none;
-      border-radius: 5px;
-    }
-
-    textarea {
-      height: 80px;
-    }
-
-    .input-messages {
-      display: none;
-      margin: 10px 0;
-      padding: 10px;
-      width: fit-content;
-      font-size: 1.6rem;
-      border-radius: 5px;
-    }
-
-    input[type="submit"] {
-      background: #fff;
-      color: #000;
-      border: none;
-      border-radius: 5px;
-      padding: 10px 20px;
-      transition: transform 0.3s ease-out;
-      cursor: pointer;
-
-      &:hover {
-        transform: scale(1.1);
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
   }

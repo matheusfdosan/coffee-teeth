@@ -1,6 +1,6 @@
 .our-recipes {
-  width: 90%;
-  max-width: 980px;
+  @include width();
+
   font-size: 3.4rem;
   margin: 120px auto;
 
@@ -9,38 +9,6 @@
 
     span:nth-child(2) {
       color: #efe107;
-    }
-  }
-
-  div.search {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-
-    border: 1px solid $black;
-    border-radius: 5px;
-    padding: 10px;
-
-    width: 100%;
-    max-width: 980px;
-
-    margin-top: 40px;
-
-    background: $white;
-
-    input {
-      height: 30px;
-      padding: 5px;
-      border: none;
-      background: none;
-      flex: 1;
-    }
-
-    div.cross {
-      display: none;
-      line-height: 1rem;
-      cursor: pointer;
     }
   }
 

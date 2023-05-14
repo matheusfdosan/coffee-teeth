@@ -4,8 +4,8 @@ div.hero {
 
   position: relative;
 
-  width: 90%;
-  max-width: 980px;
+  @include width();
+
   height: 580px;
 
   margin: auto;

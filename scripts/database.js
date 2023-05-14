@@ -231,7 +231,7 @@ data.forEach(({ section, img, name, price, description }) => {
       ".trending-coffees > .container > .cards-wrapper"
     )
     const card = `
-    <div class="card-coffee" data-img="${img}" data-name="${name}" data-price="${price}" data-description="${description}">
+    <div class="card-coffee same-trending" data-img="${img}" data-name="${name}" data-price="${price}" data-description="${description}">
       <img src="${img}" alt="${name}" />
       <h3>${name} - ${price}</h3>
     </div>`
@@ -240,7 +240,7 @@ data.forEach(({ section, img, name, price, description }) => {
   } else if (trendingRecipes) {
     const container = document.querySelector("div.recipes-wrapper")
     const card = `
-    <div class="card-recipe" data-img="${img}" data-name="${name}" data-price="${price}" data-description="${description}">
+    <div class="card-recipe same-trending" data-img="${img}" data-name="${name}" data-price="${price}" data-description="${description}">
       <img src="${img}" alt="thumbnail">
       <div class="arrow"></div>
       <h3>${name}</h3>

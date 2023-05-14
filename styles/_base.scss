@@ -8,6 +8,11 @@ $shadow2: 0px 43px 38px -32px #b5b6b8;
 
 $sora: "Sora", sans-serif;
 
+@mixin width() {
+  width: 90%;
+  max-width: 980px;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
